@@ -111,7 +111,7 @@
           </div>
 
           <div class="menuBlock">
-            <html:form action="/KibousyukkinnbinyuuryokuInit">
+            <html:form action="/login">
               <input type="submit" value="Šó–]o‹Î“ú“ü—Í" class="bigButton" />
             </html:form>
           </div>
@@ -140,5 +140,7 @@
         </table>
       </div>
     </div>
+  </body>
+</html>iv>
   </body>
 </html>
