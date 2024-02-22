@@ -93,7 +93,7 @@
                         </td>
                       </tr>
                       <tr class="tblHeader">
-                        <td width="150px" align="center">
+                        <td width="150px" nowrap="nowrap" align="center">
                         ŽÐˆõ–¼
                         </td>
                       </tr>

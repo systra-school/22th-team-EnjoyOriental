@@ -61,7 +61,7 @@ errorbody {
 * 業務body定義
 */
 #gymBody {
-    height: 500px;
+    height: 600px;
     overflow: auto;
 }
 
@@ -70,7 +70,7 @@ errorbody {
 */
 #footer {
     bottom: 1%;
-    height: 90px;
+    height: 40px;
 }
 #footLeft {
     float:left;
@@ -173,6 +173,7 @@ errorbody {
 */
 .tblBody {
     background-color: #E0FFFF;
+    text-wrap: nowrap;
 }
 /*
 * 文字色 黒
