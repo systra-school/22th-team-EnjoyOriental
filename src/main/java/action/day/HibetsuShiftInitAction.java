@@ -62,9 +62,9 @@ public class HibetsuShiftInitAction extends HibetsuShiftAbstractAction {
         // システム日付のシフトデータを取得する
         List<HibetsuShiftDto> hibetsuShiftDtoList = hibetsuShiftLogic.getHibetsuShiftDtoList(yearMonthDay);
 
-//        if (CheckUtils.isEmpty(hibetsuShiftDtoList)) {
-//            forward = CommonConstant.NODATA;
-//        }
+        if (CheckUtils.isEmpty(hibetsuShiftDtoList)) {	
+            forward = CommonConstant.NODATA;
+        }
 
         // フォームへ一覧をセットする
         hibetsuShiftForm.setHibetsuShiftBeanList(dtoToForm(hibetsuShiftDtoList));
