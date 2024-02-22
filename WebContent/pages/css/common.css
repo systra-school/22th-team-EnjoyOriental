@@ -1,5 +1,5 @@
 /*
-* body’è‹`
+* bodyå®šç¾©
 */
 body {
     background-color: #FFFFFF;
@@ -15,17 +15,17 @@ errorbody {
 
 
 /*
-* ƒwƒbƒ_[Aƒtƒbƒ^[‹¤’Ê’è‹`
+* ãƒ˜ãƒƒãƒ€ãƒ¼ã€ãƒ•ãƒƒã‚¿ãƒ¼å…±é€šå®šç¾©
 */
 #header,#gymBody,#footer {
     width: 100%;
     margin: 0px;
-    padding: 5px;
+    padding: 5px auto;
     background-color: #66CCFF;
 }
 
 /*
-* ƒwƒbƒ_[’è‹`
+* ãƒ˜ãƒƒãƒ€ãƒ¼å®šç¾©
 */
 #header {
     top: 2px;
@@ -48,7 +48,7 @@ errorbody {
     text-align:right;
 }
 /*
-* ƒƒjƒ…[‰æ–Ê‚Ìƒ{ƒ^ƒ“
+* ãƒ¡ãƒ‹ãƒ¥ãƒ¼ç”»é¢ã®ãƒœã‚¿ãƒ³
 */
 .menuBlock {
     margin-left:30px;
@@ -58,7 +58,7 @@ errorbody {
 }
 
 /*
-* ‹Æ–±body’è‹`
+* æ¥­å‹™bodyå®šç¾©
 */
 #gymBody {
     height: 500px;
@@ -66,7 +66,7 @@ errorbody {
 }
 
 /*
-* ƒtƒbƒ^[’è‹`
+* ãƒ•ãƒƒã‚¿ãƒ¼å®šç¾©
 */
 #footer {
     bottom: 1%;
@@ -88,7 +88,7 @@ errorbody {
     text-align:right;
 }
 /*
-* ƒGƒ‰[ƒy[ƒW ƒwƒbƒ_[Aƒtƒbƒ^[‹¤’Ê’è‹`
+* ã‚¨ãƒ©ãƒ¼ãƒšãƒ¼ã‚¸ ãƒ˜ãƒƒãƒ€ãƒ¼ã€ãƒ•ãƒƒã‚¿ãƒ¼å…±é€šå®šç¾©
 */
 #errorHeader,#errorGymBody,#errorFooter {
     width: 100%;
@@ -98,7 +98,7 @@ errorbody {
 }
 
 /*
-* ƒGƒ‰[ƒy[ƒW ƒwƒbƒ_[’è‹`
+* ã‚¨ãƒ©ãƒ¼ãƒšãƒ¼ã‚¸ ãƒ˜ãƒƒãƒ€ãƒ¼å®šç¾©
 */
 #errorHeader {
     top: 1%;
@@ -109,7 +109,7 @@ errorbody {
 }
 
 /*
-* ƒGƒ‰[ƒy[ƒW ‹Æ–±body’è‹`
+* ã‚¨ãƒ©ãƒ¼ãƒšãƒ¼ã‚¸ æ¥­å‹™bodyå®šç¾©
 */
 #errorGymBody {
     top: 8%;
@@ -120,7 +120,7 @@ errorbody {
 }
 
 /*
-* ƒGƒ‰[ƒy[ƒW ƒtƒbƒ^[’è‹`
+* ã‚¨ãƒ©ãƒ¼ãƒšãƒ¼ã‚¸ ãƒ•ãƒƒã‚¿ãƒ¼å®šç¾©
 */
 #errorFooter {
     bottom: 1%;
@@ -128,7 +128,7 @@ errorbody {
 }
 
 /*
-* ƒ{ƒ^ƒ“ƒTƒCƒY’Êí
+* ãƒœã‚¿ãƒ³ã‚µã‚¤ã‚ºé€šå¸¸
 */
 .smlButton {
     width: 100px;
@@ -136,7 +136,7 @@ errorbody {
 }
 
 /*
-* ƒ{ƒ^ƒ“ƒTƒCƒY‘å
+* ãƒœã‚¿ãƒ³ã‚µã‚¤ã‚ºå¤§
 */
 .bigButton {
     width: 200px;
@@ -144,7 +144,7 @@ errorbody {
 }
 
 /*
-* ƒ{ƒ^ƒ“ƒTƒCƒYƒƒ“ƒO
+* ãƒœã‚¿ãƒ³ã‚µã‚¤ã‚ºãƒ­ãƒ³ã‚°
 */
 .lngButton {
     width: 200px;
@@ -153,7 +153,7 @@ errorbody {
 
 
 /*
-* –ß‚éƒ{ƒ^ƒ“‚ÌƒXƒ^ƒCƒ‹
+* æˆ»ã‚‹ãƒœã‚¿ãƒ³ã®ã‚¹ã‚¿ã‚¤ãƒ«
 */
 .backBtn {
     top: 5px;
@@ -161,7 +161,7 @@ errorbody {
 }
 
 /*
-* ƒe[ƒuƒ‹ƒwƒbƒ_[‚ÌƒXƒ^ƒCƒ‹
+* ãƒ†ãƒ¼ãƒ–ãƒ«ãƒ˜ãƒƒãƒ€ãƒ¼ã®ã‚¹ã‚¿ã‚¤ãƒ«
 */
 .tblHeader {
     background-color: #98FB98;
@@ -169,27 +169,27 @@ errorbody {
 }
 
 /*
-* ƒe[ƒuƒ‹ƒ{ƒfƒB‚ÌƒXƒ^ƒCƒ‹
+* ãƒ†ãƒ¼ãƒ–ãƒ«ãƒœãƒ‡ã‚£ã®ã‚¹ã‚¿ã‚¤ãƒ«
 */
 .tblBody {
     background-color: #E0FFFF;
 }
 /*
-* •¶šF •
+* æ–‡å­—è‰² é»’
 */
 .fontBlack {
     color: black;
 }
 
 /*
-* •¶šF Â
+* æ–‡å­—è‰² é’
 */
 .fontBlue {
     color: blue;
 }
 
 /*
-* •¶šF Ô
+* æ–‡å­—è‰² èµ¤
 */
 .fontRed {
     color: red;
