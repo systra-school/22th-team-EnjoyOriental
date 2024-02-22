@@ -78,7 +78,10 @@ public class LoginAction extends Action {
 
         if (CheckUtils.isEmpty(loginDto)) {
             forward = "error";
-        } else {
+          //修正#003 追記
+            session.setAttribute("error","ログインIDまたはパスワードが違います。");
+          //修正#003 追記終わりw
+            } else {
 
             // ログインユーザ保持用Dtoを作成する
             this.createLoginUserData(session, loginDto);
