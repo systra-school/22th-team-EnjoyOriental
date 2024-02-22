@@ -148,9 +148,10 @@
                       </tr>
                       <tr height="<%=trHeight %>px">
                         <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
-                        ÇOÇRÅFÇOÇO&#xFF5E;ÇO<%=tdWidth %>ÇO
+                        ÇOÇRÅFÇOÇO&#xFF5E;ÇOÇSÅFÇOÇO
                         </td>
                       </tr>
+
                       <tr height="<%=trHeight %>px">
                         <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
                         ÇOÇSÅFÇOÇO&#xFF5E;ÇOÇTÅFÇOÇO
