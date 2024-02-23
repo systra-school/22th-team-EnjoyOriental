@@ -137,20 +137,20 @@
                   }
                   %>
 
-                  <td width="50px" align="center" class="<%=color %>">
+                  <td width="80px" align="center" class="<%=color %>">
                     <bean:write name="kinmuJissekiNyuryokuKakuninList" property="youbi" /><br>
                   </td>
                   <td width="100px" align="center">
                     <bean:write name="kinmuJissekiNyuryokuKakuninList" property="symbol" /><br>
                   </td>
                   <td width="100px" align="center">
-                    <html:text style="text-align:center" size="10" maxlength="5" name="kinmuJissekiNyuryokuKakuninList" property="startTime" indexed="true"></html:text><br>
+                    <html:text style="text-align:center" size="5" maxlength="5" name="kinmuJissekiNyuryokuKakuninList" property="startTime" indexed="true"></html:text><br>
                   </td>
                   <td width="100px" align="center">
-                    <html:text style="text-align:center" size="10" maxlength="5" name="kinmuJissekiNyuryokuKakuninList" property="endTime" indexed="true"></html:text><br>
+                    <html:text style="text-align:center" size="5" maxlength="5" name="kinmuJissekiNyuryokuKakuninList" property="endTime" indexed="true"></html:text><br>
                   </td>
                   <td width="100px" align="center">
-                    <html:text style="text-align:center" size="10" maxlength="5" name="kinmuJissekiNyuryokuKakuninList" property="breakTime" indexed="true"></html:text><br>
+                    <html:text style="text-align:center" size="5" maxlength="5" name="kinmuJissekiNyuryokuKakuninList" property="breakTime" indexed="true"></html:text><br>
                   </td>
                   <td width="100px" align="center">
                     <bean:write name="kinmuJissekiNyuryokuKakuninList" property="jitsudouTime" /><br>
