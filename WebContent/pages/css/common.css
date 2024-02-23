@@ -18,7 +18,7 @@ errorbody {
 * ヘッダー、フッター共通定義
 */
 #header,#gymBody,#footer {
-    width: 100%;
+    width: 1520px;
     margin: 0px;
     padding: 5px auto;
     background-color: #66CCFF;
@@ -30,7 +30,6 @@ errorbody {
 #header {
     top: 2px;
     height: 40px;
-    width:100%;
 }
 #headLeft {
     width:200px;
