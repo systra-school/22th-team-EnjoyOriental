@@ -86,8 +86,9 @@ public class TsukibetsuShiftKakuninSearchAction extends TsukibetsuShiftNyuuryoku
         // セレクトボックスの取得
         ComboListUtilLogic comboListUtils = new ComboListUtilLogic();
         Map<String, String> shiftCmbMap = comboListUtils.getComboShift(true);
-        Map<String, String> yearMonthCmbMap = comboListUtils.getComboYearMonth(CommonUtils.getFisicalDay(CommonConstant.yearMonthNoSl), 3, ComboListUtilLogic.KBN_YEARMONTH_NEXT, true);
-
+        //修正#015 プルダウンの表示件数
+        Map<String, String> yearMonthCmbMap = comboListUtils.getComboYearMonth(CommonUtils.getFisicalDay(CommonConstant.yearMonthNoSl), 2, ComboListUtilLogic.KBN_YEARMONTH_NEXT, true);
+        //修正#015　修正＼(^o^)／ｵﾜﾀ
         if (CheckUtils.isEmpty(tsukibetsuShiftDtoMap)) {
             // データなし
             TsukibetsuShiftKakuninBean tsukibetsuShiftBean = new TsukibetsuShiftKakuninBean();
