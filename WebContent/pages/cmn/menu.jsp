@@ -73,7 +73,9 @@
             <html:form action="/shukkinKibouKakuninInit">
               <input type="submit" value="出勤希望日確認" class="bigButton" />
             </html:form>
+            <%-- 修正＃019　画面遷移 --%>
             <html:form action="/tsukibetsuShiftNyuuryokuInit">
+            <%-- 修正＃019　終わりww --%>
               <input type="submit" value="月別シフト入力" class="bigButton" />
             </html:form>
           </div>
@@ -141,6 +143,6 @@
       </div>
     </div>
   </body>
-</html>iv>
+</html>
   </body>
 </html>

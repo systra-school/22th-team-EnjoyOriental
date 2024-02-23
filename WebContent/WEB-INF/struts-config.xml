@@ -254,15 +254,15 @@
         scope="session">
         <forward name="success"  path="/menu.do"/>
       </action>
-       <!-- 出勤希望日入力　修正分　19 -->
+       <!-- 月別シフト入力　追加#019 -->
       <action
-        path="/shukkinKibouNyuuryokuInit"
+        path="/tsukibetsuShiftNyuuryokuInit"
         type="action.mth.TsukibetsuShiftNyuuryokuInitAction"
-        name="shukkinKibouNyuuryokuForm"
+        name="tsukibetsuShiftNyuuryokuForm"
         scope="session">
         <forward name="success"  path="/menu.do"/>
       </action>
-
+		<!-- 月別シフト入力　#019 追加終わりww-->
       <!-- 日別シフト初期表示 -->
       <action
         path="/hibetsuShiftInit"
