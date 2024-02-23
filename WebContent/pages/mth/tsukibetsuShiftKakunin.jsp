@@ -373,11 +373,11 @@ if (listSize > intShowLength) {
             </table>
           </div>
         </html:form>
-        <div style="margin-left:50px;">
-          <input value="–}—á•\Ž¦" type="button" class="lngButton"  onclick="openWindow()" />
-        </div>
       </div>
       <div id="footer">
+      	<div style="margin-left:50px;">
+          <input value="–}—á•\Ž¦" type="button" class="lngButton"  onclick="openWindow()" />
+        </div>
         <table>
           <tr>
             <td id="footLeft">
