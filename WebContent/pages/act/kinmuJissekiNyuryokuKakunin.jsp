@@ -137,7 +137,7 @@
                   }
                   %>
 
-                  <td width="80px" align="center" class="<%=color %>">
+                  <td width="50px" align="center" class="<%=color %>">
                     <bean:write name="kinmuJissekiNyuryokuKakuninList" property="youbi" /><br>
                   </td>
                   <td width="100px" align="center">
@@ -162,7 +162,7 @@
                     <bean:write name="kinmuJissekiNyuryokuKakuninList" property="kyuujitsuTime" /><br>
                   </td>
                   <td width="220px" align="left">
-                    <html:text style="text-align:left" size="40" name="kinmuJissekiNyuryokuKakuninList" property="bikou" indexed="true"></html:text><br>
+                    <html:text style="text-align:left" size="26" name="kinmuJissekiNyuryokuKakuninList" property="bikou" indexed="true"></html:text><br>
                   </td>
                 </tr>
               </table>
