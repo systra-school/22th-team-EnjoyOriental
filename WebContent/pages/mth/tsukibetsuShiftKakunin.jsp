@@ -137,7 +137,7 @@ if (listSize > intShowLength) {
                   </table>
                 </td>
                 <td valign="top">
-                  <div style="overflow-x: auto;overflow-y: hidden; width:985px;height: 1000px; text-align:center;">
+                  <div style="overflow-x: auto;overflow-y: hidden; width:985px;height: auto; text-align:center;">
                     <table class="tblHeader" border="1" cellpadding="0" cellspacing="0">
                       <tr height="<%=heightSize %>px">
                         <td width="40px" align="center">

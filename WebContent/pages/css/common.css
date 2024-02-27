@@ -60,7 +60,7 @@ errorbody {
 * 業務body定義
 */
 #gymBody {
-    height: 600px;
+    height: auto;
     overflow: auto;
 }
 
