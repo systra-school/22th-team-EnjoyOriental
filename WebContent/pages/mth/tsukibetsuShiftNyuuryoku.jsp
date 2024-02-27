@@ -147,8 +147,8 @@ if (listSize > intShowLength) {
                     </logic:iterate>
                   </table>
                 </td>
-                <td>
-                  <div style="overflow-x: auto;overflow-y: hidden; width:985px;height: <%=heightSize * (listSize + 2) + 18 %>px; text-align:center;">
+                <td valign="top" >
+                  <div style="overflow-x: auto;overflow-y: hidden; width:985px;height: auto; text-align:center;">
                     <table class="tblHeader" border="1" cellpadding="0" cellspacing="0">
                       <tr height="<%=heightSize %>px">
                         <td width="40px" align="center">
@@ -273,7 +273,8 @@ if (listSize > intShowLength) {
                       </tr>
                       <logic:iterate offset="offset" length="<%=showLength %>" id="tsukibetsuShiftNyuuryokuBeanList" name="tsukibetsuShiftNyuuryokuForm" property="tsukibetsuShiftNyuuryokuBeanList">
                         <html:hidden name="tsukibetsuShiftNyuuryokuBeanList" property="registFlg" value="true" indexed="true"/>
-                        <tr height="<%=heightSize %>px">
+                    <%-- Å´<tr height="<%=heightSize %>px">ÇÅA<tr height="26px">Ç…ïœçXÅ@02/27 ì¸ç] --%>
+                        <tr height="26px">
                           <td width="40px" align="center" valign="middle">
                             <html:select property="shiftId01" name="tsukibetsuShiftNyuuryokuBeanList" indexed="true">
                             <html:optionsCollection name="tsukibetsuShiftNyuuryokuForm"
