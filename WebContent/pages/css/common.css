@@ -1,16 +1,22 @@
+/* ヘッダーのleft,center,rightのwidthを合計したpx値と、
+body,wrapper,ヘッダー・フッター・ジムボディ共通定義のwidthのpx値を揃えました。
+2/28 入江 */
+
 /*
 * body定義
 */
 body {
     background-color: #FFFFFF;
     overflow: hidden;
+    width:1300px;
 }
 errorbody {
     background-color: red;
 }
 #wrapper {
-    width:100%;
+    width:1300px;
     padding:0px;
+    margin: 10px; /* 外側余白を設定 02/28 入江 */
 }
 
 
@@ -18,7 +24,7 @@ errorbody {
 * ヘッダー、フッター共通定義
 */
 #header,#gymBody,#footer {
-    width: 1520px;
+    width: 1300px;
     margin: 0px;
     padding: 5px auto;
     background-color: #66CCFF;
@@ -32,7 +38,7 @@ errorbody {
     height: 40px;
 }
 #headLeft {
-    width:200px;
+    width:250px;
     text-align:left;
 }
 #headCenter {
@@ -43,7 +49,7 @@ errorbody {
 
 }
 #headRight {
-    width:200px;
+    width:250px;
     text-align:right;
 }
 /*
@@ -60,7 +66,7 @@ errorbody {
 * 業務body定義
 */
 #gymBody {
-    height: auto;
+    height: 500px;
     overflow: auto;
 }
 
