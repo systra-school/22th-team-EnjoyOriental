@@ -1,19 +1,19 @@
 /**
- * ƒtƒ@ƒCƒ‹–¼Fcheck.js
- * Šeíƒ`ƒFƒbƒNˆ—
+ * ï¿½tï¿½@ï¿½Cï¿½ï¿½ï¿½ï¿½ï¿½Fcheck.js
+ * ï¿½eï¿½ï¿½`ï¿½Fï¿½bï¿½Nï¿½ï¿½ï¿½ï¿½
  *
- * •ÏX—š—ğ
+ * ï¿½ÏXï¿½ï¿½ï¿½ï¿½
  * 1.0  2010/09/10 Kazuya.Naraki
  */
 
 /**
- * “n‚³‚ê‚½ˆø”‚ª”¼ŠpƒJƒi‚Å‚ ‚é‚©ƒ`ƒFƒbƒN‚·‚é
- * param str ƒ`ƒFƒbƒN‘ÎÛ•¶š—ñ
- * return true:”¼ŠpƒJƒi false:”¼ŠpƒJƒiˆÈŠO
+ * ï¿½nï¿½ï¿½ï¿½ê‚½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½pï¿½Jï¿½iï¿½Å‚ï¿½ï¿½é‚©ï¿½`ï¿½Fï¿½bï¿½Nï¿½ï¿½ï¿½ï¿½
+ * param str ï¿½`ï¿½Fï¿½bï¿½Nï¿½ÎÛ•ï¿½ï¿½ï¿½ï¿½ï¿½
+ * return true:ï¿½ï¿½ï¿½pï¿½Jï¿½i false:ï¿½ï¿½ï¿½pï¿½Jï¿½iï¿½ÈŠO
  */
 function checkHankakuKana(str) {
 
-    if (str.match(/^[±-İ]*$/)) {
+    if (str.match(/^[ï¿½-ï¿½]*$/)) {
         return true;
     }
 
@@ -21,9 +21,9 @@ function checkHankakuKana(str) {
 }
 
 /**
- * •K{ƒ`ƒFƒbƒN
- * param str ƒ`ƒFƒbƒN‘ÎÛ•¶š—ñ
- * return true:‹ó‚Å‚È‚¢ false:‚©‚ç
+ * ï¿½Kï¿½{ï¿½`ï¿½Fï¿½bï¿½N
+ * param str ï¿½`ï¿½Fï¿½bï¿½Nï¿½ÎÛ•ï¿½ï¿½ï¿½ï¿½ï¿½
+ * return true:ï¿½ï¿½Å‚È‚ï¿½ false:ï¿½ï¿½ï¿½ï¿½
  */
 function checkRequired(str) {
 
@@ -35,12 +35,17 @@ function checkRequired(str) {
 }
 
 /**
- * ƒtƒH[ƒ}ƒbƒgƒ`ƒFƒbƒN
- * param str ƒ`ƒFƒbƒN‘ÎÛ•¶š—ñ
- * return true:‹ó‚Å‚È‚¢ false:‚©‚ç
+ * ï¿½ï¿½ï¿½ï¿½ï¿½tï¿½Hï¿½[ï¿½}ï¿½bï¿½gï¿½`ï¿½Fï¿½bï¿½N
+ * param str ï¿½`ï¿½Fï¿½bï¿½Nï¿½ÎÛ•ï¿½ï¿½ï¿½ï¿½ï¿½
+ * return true:ï¿½ï¿½Å‚È‚ï¿½ false:ï¿½ï¿½ï¿½ï¿½
  */
 function checkTime(str) {
-    // ³‹K•\Œ»‚É‚æ‚é‘®ƒ`ƒFƒbƒN
+	
+	if (typeof str !== 'string') {
+        str = String(str);
+    }
+	
+    // ï¿½ï¿½ï¿½Kï¿½\ï¿½ï¿½ï¿½É‚ï¿½é‘ï¿½ï¿½ï¿½`ï¿½Fï¿½bï¿½N
     if(!str.match(/^\d{2}\:\d{2}$/)){
         return false;
     }
@@ -55,9 +60,9 @@ function checkTime(str) {
 }
 
 /**
- * ‚Ì‘å¬‚ğƒ`ƒFƒbƒN‚·‚é
- * param str ƒ`ƒFƒbƒN‘ÎÛ•¶š—ñ
- * return true:ŠJn‚ªI—¹ˆÈ‰º false:ŠJn‚ªI—¹‚æ‚è‘å‚«‚¢
+ * ï¿½ï¿½ï¿½ï¿½ï¿½Ì‘å¬ï¿½ï¿½ï¿½`ï¿½Fï¿½bï¿½Nï¿½ï¿½ï¿½ï¿½
+ * param str ï¿½`ï¿½Fï¿½bï¿½Nï¿½ÎÛ•ï¿½ï¿½ï¿½ï¿½ï¿½
+ * return true:ï¿½Jï¿½nï¿½ï¿½ï¿½Iï¿½ï¿½ï¿½È‰ï¿½ false:ï¿½Jï¿½nï¿½ï¿½ï¿½Iï¿½ï¿½ï¿½ï¿½ï¿½å‚«ï¿½ï¿½
  */
 function checkTimeCompare(start, end) {
 
