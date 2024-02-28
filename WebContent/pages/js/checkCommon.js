@@ -1,19 +1,19 @@
 /**
- * ãƒ•ã‚¡ã‚¤ãƒ«åï¼šcheck.js
- * å„ç¨®ãƒã‚§ãƒƒã‚¯å‡¦ç†
+ * ƒtƒ@ƒCƒ‹–¼Fcheck.js
+ * Šeíƒ`ƒFƒbƒNˆ—
  *
- * å¤‰æ›´å±¥æ­´
+ * •ÏX—š—ğ
  * 1.0  2010/09/10 Kazuya.Naraki
  */
 
 /**
- * æ¸¡ã•ã‚ŒãŸå¼•æ•°ãŒåŠè§’ã‚«ãƒŠã§ã‚ã‚‹ã‹ãƒã‚§ãƒƒã‚¯ã™ã‚‹
- * param str ãƒã‚§ãƒƒã‚¯å¯¾è±¡æ–‡å­—åˆ—
- * return true:åŠè§’ã‚«ãƒŠ false:åŠè§’ã‚«ãƒŠä»¥å¤–
+ * “n‚³‚ê‚½ˆø”‚ª”¼ŠpƒJƒi‚Å‚ ‚é‚©ƒ`ƒFƒbƒN‚·‚é
+ * param str ƒ`ƒFƒbƒN‘ÎÛ•¶š—ñ
+ * return true:”¼ŠpƒJƒi false:”¼ŠpƒJƒiˆÈŠO
  */
 function checkHankakuKana(str) {
 
-    if (str.match(/^[ï½±-ï¾]*$/)) {
+    if (str.match(/^[±-İ]*$/)) {
         return true;
     }
 
@@ -21,9 +21,9 @@ function checkHankakuKana(str) {
 }
 
 /**
- * å¿…é ˆãƒã‚§ãƒƒã‚¯
- * param str ãƒã‚§ãƒƒã‚¯å¯¾è±¡æ–‡å­—åˆ—
- * return true:ç©ºã§ãªã„ false:ã‹ã‚‰
+ * •K{ƒ`ƒFƒbƒN
+ * param str ƒ`ƒFƒbƒN‘ÎÛ•¶š—ñ
+ * return true:‹ó‚Å‚È‚¢ false:‚©‚ç
  */
 function checkRequired(str) {
 
@@ -35,12 +35,12 @@ function checkRequired(str) {
 }
 
 /**
- * æ™‚åˆ»ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆãƒã‚§ãƒƒã‚¯
- * param str ãƒã‚§ãƒƒã‚¯å¯¾è±¡æ–‡å­—åˆ—
- * return true:ç©ºã§ãªã„ false:ã‹ã‚‰
+ * ƒtƒH[ƒ}ƒbƒgƒ`ƒFƒbƒN
+ * param str ƒ`ƒFƒbƒN‘ÎÛ•¶š—ñ
+ * return true:‹ó‚Å‚È‚¢ false:‚©‚ç
  */
 function checkTime(str) {
-    // æ­£è¦è¡¨ç¾ã«ã‚ˆã‚‹æ›¸å¼ãƒã‚§ãƒƒã‚¯
+    // ³‹K•\Œ»‚É‚æ‚é‘®ƒ`ƒFƒbƒN
     if(!str.match(/^\d{2}\:\d{2}$/)){
         return false;
     }
@@ -55,9 +55,9 @@ function checkTime(str) {
 }
 
 /**
- * æ™‚åˆ»ã®å¤§å°ã‚’ãƒã‚§ãƒƒã‚¯ã™ã‚‹
- * param str ãƒã‚§ãƒƒã‚¯å¯¾è±¡æ–‡å­—åˆ—
- * return true:é–‹å§‹ãŒçµ‚äº†ä»¥ä¸‹ false:é–‹å§‹ãŒçµ‚äº†ã‚ˆã‚Šå¤§ãã„
+ * ‚Ì‘å¬‚ğƒ`ƒFƒbƒN‚·‚é
+ * param str ƒ`ƒFƒbƒN‘ÎÛ•¶š—ñ
+ * return true:ŠJn‚ªI—¹ˆÈ‰º false:ŠJn‚ªI—¹‚æ‚è‘å‚«‚¢
  */
 function checkTimeCompare(start, end) {
 
