@@ -129,8 +129,8 @@
             <table border="0" cellpadding="0" cellspacing="0">
               <tr height="100%">
                 <td valign="top">
-                  <div id="bodyLeftTbl" style="overflow-x: auto;overflow-y: hidden;width: 154px;height:<%=bodyLeftDivHeight %>px; ">
-                    <table border="1" cellpadding="0" cellspacing="0" class="tblBody">
+                  <div id="bodyLeftTbl" style="overflow-x: auto;overflow-y: hidden;width: 154px;height:<%=bodyLeftDivHeight %>px;">
+                    <table border="1" cellpadding="0" cellspacing="0" class="tblBody" style="font-size:13px;">
                       <tr height="<%=trHeight %>px">
                         <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
                         ÇOÇOÅFÇOÇO&#xFF5E;ÇOÇPÅFÇOÇO
@@ -257,7 +257,7 @@
                 </td>
                 <td width="100%" valign="top">
                   <div id="bodyRightTbl"  style="overflow-x: auto;overflow-y: auto;width: <%=bodyRightDivWidth %>px;height:<%=bodyRightDivHeight %>px;" onScroll="onScroll();">
-                    <table border="1" cellpadding="0" cellspacing="0" class="tblBody">
+                    <table border="1" cellpadding="0" cellspacing="0" class="tblBody" style="font-size:13px;">
                       <tr height="<%=trHeight %>px">
                         <logic:iterate id="hibetsuShiftBean" name="hibetsuShiftForm" property="hibetsuShiftBeanList">
                           <logic:equal value="true" name="hibetsuShiftBean" property="boolTime00">
