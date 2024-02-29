@@ -21,7 +21,7 @@
 <%@taglib uri="http://struts.apache.org/tags-html" prefix="html"%>
 
 <bean:size id="dateBeanListSize" name="shukkinKibouNyuuryokuForm"  property="dateBeanList"/>
-<bean:define id="offset" name="shukkinKibouNyuuryokuForm" property="offset" />
+<%-- ‚·‚Ý‚Ü‚¹‚ñA‚±‚±‚¢‚ç‚È‚©‚Á‚½‚Å‚·(L;ƒÖ;M)<bean:define id="offset" name="shukkinKibouNyuuryokuForm" property="offset" /> --%>
 <bean:define id="color" value="" type="java.lang.String"/>
 <bean:define id="showLength" value="18" type="java.lang.String"/>
 
