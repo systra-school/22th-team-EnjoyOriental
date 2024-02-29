@@ -342,21 +342,21 @@
               </table>
             </div>
           </html:form>
-          <div style="margin-left:50px;">
-            <input value="ñ}ó·ï\é¶" type="button" class="lngButton"  onclick="openWindow()" />
-          </div>
         </div>
       </div>
-      <div id="footer">
+       <div id="footer">
         <table>
           <tr>
             <td id="footLeft">
-              Å@
+	          <div style="margin-left:50px;">
+	            <input value="ñ}ó·ï\é¶" type="button" class="lngButton"  onclick="openWindow()" />
+	          </div>
             </td>
             <td id="footCenter">
               Å@
             </td>
             <td id="footRight">
+            
             </td>
           </tr>
         </table>
