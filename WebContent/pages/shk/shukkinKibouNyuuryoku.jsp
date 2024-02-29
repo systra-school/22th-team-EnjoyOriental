@@ -523,6 +523,8 @@
               Å@
             </td>
             <td id="footRight">
+    	        <input value="èoãŒäÛñ]ì˙éQè∆" type="button" class="lngButton"  onclick="openWindow()" />
+            	<input value="ìoò^" type="button" class="smlButton"  onclick="submitRegist()" />
             </td>
           </tr>
         </table>
