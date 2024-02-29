@@ -479,6 +479,40 @@
         scope="session">
         <forward name="success" path="/pages/cmn/shiftHanrei.jsp"/>
       </action>
+      
+       <!-- 出勤希望日入力初期表示 -->
+      <action
+        path="/shukkinKibouNyuuryokuInit"
+        type="action.shk.ShukkinKibouNyuuryokuInitAction"
+        name="shukkinKibouNyuuryokuForm"
+        scope="session">
+        <forward name="success" path="/pages/shk/shukkinKibouNyuuryoku.jsp"/>
+      </action>
+      <!-- 出勤希望日入力 -->
+      <action
+        path="/shukkinKibouNyuuryokuSearch"
+        type="action.shk.ShukkinKibouNyuuryokuSearchAction"
+        name="shukkinKibouNyuuryokuForm"
+        scope="session">
+        <forward name="success" path="/pages/shk/shukkinKibouNyuuryoku.jsp"/>
+      </action>
+      <!-- 出勤希望日入力(改ページ) -->
+      <action
+        path="/shukkinKibouNyuuryokuPage"
+        type="action.shk.ShukkinKibouNyuuryokuPageAction"
+        name="shukkinKibouNyuuryokuForm"
+        scope="session">
+        <forward name="success" path="/pages/shk/shukkinKibouNyuuryoku.jsp"/>
+      </action>
+    
+      <!-- 出勤希望日入力戻る -->
+      <action
+        path="/shukkinKibouNyuuryokuBack"
+        type="action.shk.ShukkinKibouNyuuryokuBackAction"
+        name="shukkinKibouNyuuryokuForm"
+        scope="session">
+        <forward name="success"  path="/menu.do"/>
+      </action>
     </action-mappings>
 
 
