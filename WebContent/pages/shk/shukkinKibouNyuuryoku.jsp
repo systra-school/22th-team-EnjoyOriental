@@ -48,6 +48,11 @@
         window.open("/kikin/shiftHanrei.do?param=", null, "menubar=no, toolbar=no, scrollbars=auto, resizable=yes, width=520px, height=650px");
     }
     -->
+    <!-- 出勤希望日参照ボタンのための機能を追加 02/29 入江 -->
+    function openSearch(){
+    	window.open("/kikin/shukkinKibouKakuninSearch.do", null, "menubar=no, toolbar=no, scrollbars=auto, resizable=yes, width=1300px, height=650px")
+    }
+    
     </script>
     <title>出勤希望入力画面</title>
     <link href="/kikin/pages/css/common.css" rel="stylesheet" type="text/css" />
@@ -523,7 +528,7 @@
               　
             </td>
             <td id="footRight">
-    	        <input value="出勤希望日参照" type="button" class="lngButton"  onclick="openWindow()" />
+    	        <input value="出勤希望日参照" type="button" class="lngButton"  onclick="openSearch()" />
             	<input value="登録" type="button" class="smlButton"  onclick="submitRegist()" />
             </td>
           </tr>
