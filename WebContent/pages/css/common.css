@@ -200,3 +200,7 @@ errorbody {
 .fontRed {
     color: red;
 }
+
+#syukusyou{
+	 transform: scale(0.95);
+}

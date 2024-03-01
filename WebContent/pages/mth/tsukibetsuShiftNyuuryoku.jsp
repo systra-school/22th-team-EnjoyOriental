@@ -105,7 +105,7 @@ if (listSize > intShowLength) {
           </tr>
         </table>
       </div>
-      <div id="gymBody" style="overflow: hidden;">
+      <div id="gymBody" style="overflow: hidden; height: 500px;">
       <%-- 修正＃019　画面遷移 --%>
         <html:form action="/tsukibetsuShiftNyuuryokuInit" >
         <%-- 修正＃019　終わりww --%>
@@ -124,6 +124,7 @@ if (listSize > intShowLength) {
               <bean:write name="tsukibetsuShiftNyuuryokuForm" property="cntPage"/>/
               <bean:write name="tsukibetsuShiftNyuuryokuForm" property="maxPage"/>
             </div>
+            <div id="syukusyou"> <%-- 表のスクロールバーが表示されるよう、表を縮小するためのidを作成 03/01入江 --%>
             <table width="1100px" cellpadding="0" cellspacing="0">
               <tr>
                 <td width="150px" valign="top">
@@ -538,6 +539,7 @@ if (listSize > intShowLength) {
                 </td>
               </tr>
             </table>
+            </div> <%-- syukusyou --%>
           </div>
         </html:form>
         <%--　ボタンをfooterへ移動＃026 --%>
