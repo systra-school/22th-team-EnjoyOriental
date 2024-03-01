@@ -39,7 +39,7 @@
      * 検索
      */
     function submitSearch() {
-        doSubmit('/kikin/shukkinKibouKakuninSearch.do');
+        doSubmit('/kikin/shukkinKibouNyuuryokuSearch.do');
     }
     /**
      * サブウィンドウを開く
