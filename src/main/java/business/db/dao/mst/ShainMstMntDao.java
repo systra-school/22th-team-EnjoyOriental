@@ -6,7 +6,6 @@
  */
 package business.db.dao.mst;
 
-import static constant.DbConstant.M_shain;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -20,6 +19,7 @@ import business.db.dao.AbstractDao;
 import business.dto.LoginUserDto;
 import business.dto.mst.ShainMstMntDto;
 import business.logic.utils.CommonUtils;
+import constant.DbConstant.M_shain;
 
 
 
@@ -156,7 +156,7 @@ public class ShainMstMntDao extends AbstractDao {
 
         try {
             // コネクションの取得
-            this.getConnection();
+            //this.getConnection();  #053 2024/03/01修正内薗
 
             StringBuffer strSql = new StringBuffer();
             strSql.append("UPDATE ");
