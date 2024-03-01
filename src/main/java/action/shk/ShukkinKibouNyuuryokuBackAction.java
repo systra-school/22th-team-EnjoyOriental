@@ -5,13 +5,14 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.apache.struts.action.Action;
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
 
 import constant.CommonConstant;
 
-public class ShukkinKibouNyuuryokuBackAction {
+public class ShukkinKibouNyuuryokuBackAction extends Action{
 	// ログ出力クラス
     private Log log = LogFactory.getLog(this.getClass());
     
