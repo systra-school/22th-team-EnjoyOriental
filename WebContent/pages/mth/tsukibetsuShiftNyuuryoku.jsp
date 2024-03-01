@@ -540,16 +540,18 @@ if (listSize > intShowLength) {
             </table>
           </div>
         </html:form>
-        <div style="margin-left:50px;">
-          <input value="凡例表示" type="button" class="lngButton"  onclick="openWindow()" />
-          <input value="基本シフト反映" type="button" class="lngButton"  />
-          <input value="出勤希望日反映" type="button" class="lngButton"  onclick="submitShukkinKibou()" />
-        </div>
+        <%--　ボタンをfooterへ移動＃026 --%>
       </div>
       <div id="footer">
         <table>
           <tr>
             <td id="footLeft">
+            <%--　ボタンの改行をブロック＃026 --%>
+            <div style="margin-left:50px;white-space: nowrap;">
+	          <input value="凡例表示" type="button" class="lngButton"  onclick="openWindow()" />
+	          <input value="基本シフト反映" type="button" class="lngButton"  />
+	          <input value="出勤希望日反映" type="button" class="lngButton"  onclick="submitShukkinKibou()" />
+	        </div>
             </td>
             <td id="footCenter" style="text-align: right;">
 
