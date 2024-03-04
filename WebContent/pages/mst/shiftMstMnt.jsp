@@ -190,31 +190,30 @@
               <bean:define id="shiftId" name= "shiftMstMntBeanList" property="shiftId" type="java.lang.String"/>
                 <tr>
                   <td width="100px"  align="center">
-                    <html:text property="shiftName" name="shiftMstMntBeanList" size="10" maxlength="10" indexed="true"/>
+                    <html:text property="shiftName" name="shiftMstMntBeanList" size="5" maxlength="10" indexed="true"/><%--size="10"⇒size="5"変更 3/4内薗--%>
                     <html:hidden property="shiftId" name="shiftMstMntBeanList" indexed="true"/>
                   </td>
                   <td width="70px"  align="center">
-                    <html:text property="symbol" name="shiftMstMntBeanList"  size="2" maxlength="2" indexed="true"/>
+                    <html:text property="symbol" name="shiftMstMntBeanList"  size="1" maxlength="2" indexed="true"/><%--size="2"⇒size="1"変更 3/4内薗--%>
                   </td>
                   <td width="230px"  align="center">
                     <table width="100%" >
                       <tr>
                         <td align="center">
-                          <html:text property="startTime" name="shiftMstMntBeanList"  size="10" maxlength="5" indexed="true"/>
+                          <html:text property="startTime" name="shiftMstMntBeanList"  size="5" maxlength="5" indexed="true"/><%--size="10"⇒size="5"変更 3/4内薗--%>
                         </td>
                         <td align="center">
                             &#xFF5E;
                         </td>
                         <td align="center">
-                          <html:text property="endTime" name="shiftMstMntBeanList"  size="10" maxlength="5" indexed="true"/>
+                          <html:text property="endTime" name="shiftMstMntBeanList"  size="5" maxlength="5" indexed="true"/><%--size="10"⇒size="5"変更 3/4内薗--%>
                         </td>
                       </tr>
                     </table>
                   </td>
                   <td width="100px"  align="center">
-                    <html:text property="breakTime" name="shiftMstMntBeanList"  size="10" maxlength="5" indexed="true"/>
+                    <html:text property="breakTime" name="shiftMstMntBeanList"  size="5" maxlength="5" indexed="true"/><%--size="10"⇒size="5"変更 3/4内薗--%>
                   </td>
-
                   <td width="70px"  align="center">
                     <html:checkbox property="deleteShiftId" name="shiftMstMntBeanList"  value="<%= shiftId %>"  onchange='<%="checkDeleteFlg(" + idx + ")" %>'></html:checkbox>
                     <html:hidden property="deleteFlg" name="shiftMstMntBeanList" value="false" indexed="true"/>
