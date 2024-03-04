@@ -488,7 +488,7 @@
         scope="session">
         <forward name="success" path="/pages/shk/shukkinKibouNyuuryoku.jsp"/>
       </action>
-      <!-- 出勤希望日入力 -->
+      <!-- 出勤希望日入力 検索-->
       <action
         path="/shukkinKibouNyuuryokuSearch"
         type="action.shk.ShukkinKibouNyuuryokuSearchAction"
@@ -512,6 +512,15 @@
         name="shukkinKibouNyuuryokuForm"
         scope="session">
         <forward name="success"  path="/menu.do"/>
+      </action>
+      
+      <!-- 出勤希望日入力登録 -->
+      <action
+        path="/shukkinKibouNyuuryokuRegist"
+        type="action.shk.ShukkinKibouNyuuryokuRegistAction"
+        name="shukkinKibouNyuuryokuForm"
+        scope="session">
+        <forward name="success" path="/pages/shk/shukkinKibouNyuuryoku.jsp"/>
       </action>
     </action-mappings>
 

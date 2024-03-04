@@ -34,7 +34,15 @@
     <script type="text/javascript" src="/kikin/pages/js/checkCommon.js"></script>
     <script type="text/javascript" src="/kikin/pages/js/message.js"></script>
     <script type="text/javascript" language="Javascript1.1">
-	<!--
+	<!-- 対応番号48 登録ボタンのためのJSの機能を追加 03/01 竹田 -->
+	/**
+     * 登録
+     */
+    function submitRegist() {
+        // サブミット
+        doSubmit('/kikin/shukkinKibouNyuuryokuRegist.do');
+    }
+    <!--
     /**
      * 検索
      */
