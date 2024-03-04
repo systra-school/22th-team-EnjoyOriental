@@ -53,7 +53,7 @@
   </head>
   <body>
     <div id="wrapper">
-      <div id="header">
+      <div id="header" style = "padding:5px 0 0 0;">
         <table>
           <tr>
             <td id="headLeft">
@@ -68,7 +68,8 @@
           </tr>
         </table>
       </div>
-      <div id="gymBody" style="overflow: hidden;">
+      <%-- #031 heightí«â¡ --%>
+      <div id="gymBody" style="overflow: hidden; height: auto;">
         <div style="margin-left:10px;">
           <html:form action="/shukkinKibouKakuninInit" >
             ï\é¶îNåéÅF
@@ -82,7 +83,8 @@
             <html:link href="/kikin/shukkinKibouKakuninPage.do?paging=next">éüÇ÷</html:link>
             <bean:write name="shukkinKibouKakuninForm" property="cntPage"/>/
             <bean:write name="shukkinKibouKakuninForm" property="maxPage"/>
-            <div>
+            <%-- #031 heightí«â¡ --%>
+            <div id = "syukusyou">
               <table width="1100px" cellpadding="0" cellspacing="0">
                 <tr>
                   <td width="150px" valign="top">
@@ -344,7 +346,7 @@
           </html:form>
         </div>
       </div>
-       <div id="footer">
+       <div id="footer" style = "padding:0;">
         <table>
           <tr>
             <td id="footLeft">
