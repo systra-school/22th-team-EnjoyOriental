@@ -96,7 +96,7 @@ if (listSize > intShowLength) {
           </tr>
         </table>
       </div>
-      <div id="gymBody" style="overflow: hidden;">
+      <div id="gymBody" style="overflow: hidden; height:485px;"><%-- height:485px; 追加　03/04内薗--%>
         <html:form action="/shukkinKibouKakuninInit" >
           <div style="margin-left:50px;">
             <div style="height: 25px;">
@@ -113,6 +113,7 @@ if (listSize > intShowLength) {
               <bean:write name="tsukibetsuShiftKakuninForm" property="cntPage"/>/
               <bean:write name="tsukibetsuShiftKakuninForm" property="maxPage"/>
             </div>
+            <div id="syukusyou"><%--印刷ボタンが表示されるよう、表を縮小するためのidを作成 03/04内薗 --%>
             <table width="1100px" cellpadding="0" cellspacing="0">
               <tr>
                 <td width="150px" valign="top">
@@ -137,6 +138,7 @@ if (listSize > intShowLength) {
                   </table>
                 </td>
                 <td valign="top">
+                <%--<div style="overflow-x: auto;overflow-y: hidden; width:985px;height: auto; text-align:center;"> --%>
                   <div style="overflow-x: auto;overflow-y: hidden; width:985px;height: auto; text-align:center;">
                     <table class="tblHeader" border="1" cellpadding="0" cellspacing="0">
                       <tr height="<%=heightSize %>px">
@@ -254,7 +256,6 @@ if (listSize > intShowLength) {
                                 color = "fontBlack";
                             }
                             %>
-
                           <td width="40px" align="center" class="<%=color %>">
                             <bean:write property="youbi" name="dateBeanList"/><br>
                           </td>
@@ -371,6 +372,7 @@ if (listSize > intShowLength) {
                 </td>
               </tr>
             </table>
+            </div> <%-- syukusyou --%>
           </div>
         </html:form>
       </div>
