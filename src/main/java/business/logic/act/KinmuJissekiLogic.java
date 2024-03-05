@@ -12,13 +12,12 @@ import java.text.ParseException;
 import java.util.List;
 import java.util.Map;
 
-import exception.CommonException;
-
 import business.db.dao.act.KinmuJissekiDao;
 import business.dto.LoginUserDto;
 import business.dto.act.KinmuJissekiDto;
 import business.logic.utils.CheckUtils;
 import business.logic.utils.CommonUtils;
+import exception.CommonException;
 
 /**
  * 説明：ログイン処理のロジック
@@ -204,6 +203,46 @@ public class KinmuJissekiLogic {
             String startTimeShift = kinmuJissekiDto.getStartTimeShift();
             String endTimeShift = kinmuJissekiDto.getEndTimeShift();
             String breakTimeShift = kinmuJissekiDto.getBreakTimeShift();
+            
+            if (CheckUtils.isEmpty(startTimeShift) || CheckUtils.isEmpty(endTimeShift) || CheckUtils.isEmpty(breakTimeShift)) {
+                // シフトがない場合、休日時間にセット
+            	kinmuJissekiDto.setKyuujitsuTime(jitsudouTime.toString());
+                continue;
+            }
+            
+            /* 時間外時間算出のための計算処理を追記（開始↓） 03/04 入江*/
+            
+            /*
+             * 計算処理を行うために各時間を
+             * 秒に変換する。
+             */
+            long startTimeShiftLong = CommonUtils.getSecond(startTimeShift);
+            long endTimeShiftLong = CommonUtils.getSecond(endTimeShift);
+            long breakTimeShiftLong = CommonUtils.getSecond(breakTimeShift);
+
+            // 時間外時間(実働時間 - 終了時間（シフト） - 開始時間（シフト） - 休憩時間（シフト）)
+            long jikangaiTimeS = (jitsudouTimeS - (endTimeShiftLong - startTimeShiftLong - breakTimeShiftLong)); // 秒
+
+            if (jikangaiTimeS < 0) {
+                // 休憩が多かったとき
+            	jikangaiTimeS = 0;
+            }
+
+            // 秒を60で除算する → 分に変換。
+            long jikangaiTimeM = jikangaiTimeS / 60; // 分
+            // 分を60で除算する → 時に変換。
+            long jikangaiTimeH = jikangaiTimeM / 60; // 時
+            // 分を60で除算したときの余り → 分を算出する。
+            jikangaiTimeM = jikangaiTimeM % 60; // 余りが分になる
+
+            // 算出した値を画面へ表示する形式にする hh:mm
+            StringBuffer jikangaiTime = new StringBuffer();
+            jikangaiTime.append(CommonUtils.padWithZero(String.valueOf(jikangaiTimeH), 2));
+            jikangaiTime.append(colon);
+            jikangaiTime.append(CommonUtils.padWithZero(String.valueOf(jikangaiTimeM), 2));
+            
+            /* ↑追記終了　03/04 入江*/
+
 
             if (CheckUtils.isEmpty(startTimeShift) || CheckUtils.isEmpty(endTimeShift) || CheckUtils.isEmpty(breakTimeShift)) {
                 // シフトがない（休日の場合）
@@ -214,6 +253,9 @@ public class KinmuJissekiLogic {
 
                 // 実働時間を勤務実績Dtoの勤務実績へセット
                 kinmuJissekiDto.setJitsudouTime(jitsudouTime.toString());
+                
+                // 03/04追記 入江 時間外時間を勤務実績Dtoの勤務実績へセット
+                kinmuJissekiDto.setJikangaiTime(jikangaiTime.toString());
             }
         }
     }
