@@ -10,6 +10,7 @@
 	<meta http-equiv="Pragma" content="no-cache">
 	<meta http-equiv="Cache-Control" content="no-cache">
 	<meta http-equiv="Expires" content="Thu, 01 Dec 1994 16:00:00 GMT">
+	<script type="text/javascript" src="/kikin/pages/js/message.js"></script>
 	<%--<html:javascript formName="loginForm" /> 変更前 --%>
 	<html:javascript formName="loginForm" />
 	<title>ログイン画面Login</title>
@@ -23,7 +24,7 @@
 	  
     %>
   <script type="text/javascript">
-  	var msg = "ログインIDまたはパスワードが違います。";
+  	var msg = getMessageCodeOnly('E-MSG-000002');
     alert(msg);
   </script>
   <%
