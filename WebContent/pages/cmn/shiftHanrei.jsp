@@ -36,7 +36,7 @@
   </head>
   <body>
     <div id="wrapper">
-      <div id="header">
+      <div id="header"style="width:490px;">
         <table>
           <tr>
             <td id="headLeft">
@@ -49,7 +49,7 @@
           </tr>
         </table>
       </div>
-      <div id="gymBody">
+      <div id="gymBody"style="width:490px;">
         <html:form>
           <%-- –}—á --%>
           <div id="hanrei" style="width:470px; margin-left:15px; float:left">
@@ -94,7 +94,7 @@
           </div>
         </html:form>
       </div>
-      <div id="footer">
+      <div id="footer"style="width:490px;">
         <table>
           <tr>
             <td id="footLeft">
