@@ -43,7 +43,7 @@
      * サブウィンドウを開く
      */
     function openWindow(){
-        window.open("/kikin/shiftHanrei.do?param=", null, "menubar=no, toolbar=no, scrollbars=auto, resizable=yes, width=520px, height=650px");
+        window.open("/kikin/shiftHanrei.do?param=", "windowBPopup", "menubar=no, toolbar=no, scrollbars=auto, resizable=yes, width=520px, height=650px");
     }
     -->
     </script>
