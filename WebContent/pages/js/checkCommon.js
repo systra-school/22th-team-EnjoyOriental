@@ -13,7 +13,7 @@
  */
 function checkHankakuKana(str) {
 
-    if (str.match(/^[±-Ý]*$/)) {
+    if (str.match(/^[\uFF61-\uFF9F]*$/)) {
         return true;
     }
 
