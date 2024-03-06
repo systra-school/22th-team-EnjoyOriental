@@ -40,6 +40,11 @@ function checkRequired(str) {
  * return true:空でない false:から
  */
 function checkTime(str) {
+	
+    if (typeof str !== 'string') {
+        str = String(str);
+    }
+	
     // 正規表現による書式チェック
     if(!str.match(/^\d{2}\:\d{2}$/)){
         return false;
