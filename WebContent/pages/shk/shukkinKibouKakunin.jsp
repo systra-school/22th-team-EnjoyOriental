@@ -215,12 +215,13 @@
                           <% } %>
                         </tr>
                         <tr class="tblHeader">
-                          <logic:iterate id="dateBeanList" name="shukkinKibouKakuninForm" property="dateBeanList">
+						<logic:iterate id="dateBeanList" name="shukkinKibouKakuninForm" property="dateBeanList">
                           <bean:define id="youbiEnum" name="dateBeanList" property="youbiEnum"/>
+                          <bean:define id="shukujitsuFlg" name="dateBeanList" property="shukujitsuFlg"/>
                               <%
                               if (DayOfWeek.SATURDAY.equals(youbiEnum)) {
                                   color = "fontBlue";
-                              } else if (DayOfWeek.SUNDAY.equals(youbiEnum)) {
+                              } else if (DayOfWeek.SUNDAY.equals(youbiEnum) || ((boolean)shukujitsuFlg)) {
                                   color = "fontRed";
                               } else {
                                   color = "fontBlack";
