@@ -58,7 +58,7 @@
     -->
     <!-- 出勤希望日参照ボタンのための機能を追加 02/29 入江 -->
     function openSearch(){
-    	window.open("/kikin/shukkinKibouKakuninSearch.do", "searchPopup", "menubar=no, toolbar=no, scrollbars=auto, resizable=yes, width=1300px, height=650px")
+    	window.open("/kikin/shukkinKibouKakuninSubInit.do", "searchPopup", "menubar=no, toolbar=no, scrollbars=auto, resizable=yes, width=1000px, height=600px")
     }
     
     </script>

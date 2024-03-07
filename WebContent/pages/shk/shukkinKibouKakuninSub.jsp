@@ -65,7 +65,7 @@ String color = "";
           </tr>
         </table>
       </div>
-      <div id="gymBody" style="overflow: auto;">
+      <div id="gymBody" style="overflow: auto; height : auto;">
         <div style="margin-left:70px;">
           <html:form action="/shukkinKibouKakuninInit" >
             ï\é¶îNåéÅF
