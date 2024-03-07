@@ -214,9 +214,9 @@ String color = "";
                               <bean:define id="youbi" name="dateBeanList" property="youbi"/>
                         	  <bean:define id="shukujitsuFlg" name="dateBeanList" property="shukujitsuFlg"/>
                               <%
-                              if (DayOfWeek.SATURDAY.equals(youbiEnum)) {
+                              if (DayOfWeek.SATURDAY.equals(youbi)) {
                                   color = "fontBlue";
-                              } else if (DayOfWeek.SUNDAY.equals(youbiEnum) || ((boolean)shukujitsuFlg)) {
+                              } else if (DayOfWeek.SUNDAY.equals(youbi) || ((boolean)shukujitsuFlg)) {
                                   color = "fontRed";
                               } else {
                                   color = "fontBlack";
