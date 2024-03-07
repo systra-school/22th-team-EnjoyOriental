@@ -51,7 +51,7 @@
           // 終了時間を取得する。
           var varEndTime = endTime.value;
           // 休憩時間を取得する。
-          var barBreakTime = breakTime.value;
+          var varBreakTime = breakTime.value;
 
           // 背景色をクリアする
           startTime.style.backgroundColor = 'white';
@@ -70,7 +70,7 @@
               endTime.style.backgroundColor = 'red';
           }
 
-          if (!checkTime(barBreakTime)) {
+          if (!checkTime(varBreakTime)) {
               var strArr = ['休憩時間'];
               breakTimeErrMsg = getMessage('E-MSG-000004', strArr);
               breakTime.style.backgroundColor = 'red';
@@ -78,7 +78,7 @@
 
           // from - to のチェック
           if (!checkTimeCompare(varStartTime, varEndTime)) {
-            if (checkTime(startTime) && checkTime(endTime)) {
+            if (checkTime(varStartTime) && checkTime(varEndTime)) {
                 fromToErrMsg = getMessageCodeOnly('E-MSG-000005');
                 startTime.style.backgroundColor = 'red';
                 endTime.style.backgroundColor = 'red';
