@@ -21,10 +21,9 @@
 
 <bean:size id="dateBeanListSize" name="shukkinKibouKakuninForm"  property="dateBeanList"/>
 <bean:define id="offset" name="shukkinKibouKakuninForm" property="offset" />
-<%
-String showLength = "18";
-String color = "";
-%>
+<bean:define id="color" value="" type="java.lang.String"/>
+<bean:define id="showLength" value="18" type="java.lang.String"/>
+
 <html>
   <head>
     <meta http-equiv="Pragma" content="no-cache">
@@ -209,14 +208,14 @@ String color = "";
                           </td>
                           <% } %>
                         </tr>
-                        <tr class="tblHeader" >
-                          <logic:iterate id="dateBeanList" name="shukkinKibouKakuninForm" property="dateBeanList">
-                              <bean:define id="youbi" name="dateBeanList" property="youbi"/>
-                        	  <bean:define id="shukujitsuFlg" name="dateBeanList" property="shukujitsuFlg"/>
+                        <tr class="tblHeader">
+						<logic:iterate id="dateBeanList" name="shukkinKibouKakuninForm" property="dateBeanList">
+                          <bean:define id="youbiEnum" name="dateBeanList" property="youbiEnum"/>
+                          <bean:define id="shukujitsuFlg" name="dateBeanList" property="shukujitsuFlg"/>
                               <%
-                              if (DayOfWeek.SATURDAY.equals(youbi)) {
+                              if (DayOfWeek.SATURDAY.equals(youbiEnum)) {
                                   color = "fontBlue";
-                              } else if (DayOfWeek.SUNDAY.equals(youbi) || ((boolean)shukujitsuFlg)) {
+                              } else if (DayOfWeek.SUNDAY.equals(youbiEnum) || ((boolean)shukujitsuFlg)) {
                                   color = "fontRed";
                               } else {
                                   color = "fontBlack";
