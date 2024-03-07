@@ -212,10 +212,11 @@ String color = "";
                         <tr class="tblHeader" >
                           <logic:iterate id="dateBeanList" name="shukkinKibouKakuninForm" property="dateBeanList">
                               <bean:define id="youbi" name="dateBeanList" property="youbi"/>
+                        	  <bean:define id="shukujitsuFlg" name="dateBeanList" property="shukujitsuFlg"/>
                               <%
-                              if (DayOfWeek.SATURDAY.getRyaku().equals(youbi)) {
+                              if (DayOfWeek.SATURDAY.equals(youbiEnum)) {
                                   color = "fontBlue";
-                              } else if (DayOfWeek.SUNDAY.getRyaku().equals(youbi)) {
+                              } else if (DayOfWeek.SUNDAY.equals(youbiEnum) || ((boolean)shukujitsuFlg)) {
                                   color = "fontRed";
                               } else {
                                   color = "fontBlack";
