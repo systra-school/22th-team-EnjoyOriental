@@ -89,7 +89,7 @@
         	</table>
       	</div>
       	<div id="gymBody" style="overflow: hidden;">
-        <div style="margin-left:10px;">
+        <div style="margin-left:120px;">
           <html:form action="/shukkinKibouNyuuryokuInit" >
             ï\é¶îNåéÅF
             <html:select name="shukkinKibouNyuuryokuForm" property="yearMonth" onchange="submitSearch()">
@@ -260,7 +260,7 @@
                         <logic:iterate offset="offset"  length="<%=showLength %>" id="shukkinKibouNyuuryokuBeanList" name="shukkinKibouNyuuryokuForm" property="shukkinKibouNyuuryokuBeanList">
                          <logic:equal name="shukkinKibouNyuuryokuBeanList" property = "shainId"  value="<%=user_id%>">
                          <tr class="tblBody">
-                            <td width="40px" align="center" valign="middle">
+                            <td width="40px" height = "25px" align="center" valign="middle">
                             <html:select property="shiftId01" name="shukkinKibouNyuuryokuBeanList" indexed="true">
                             <html:optionsCollection name="shukkinKibouNyuuryokuForm"
                                                     property="shiftCmbMap"
