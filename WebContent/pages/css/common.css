@@ -17,7 +17,6 @@ errorbody {
     width:98%;
     height:100%;
     padding:0px;
-    margin: 10px; /* 外側余白を設定 02/28 入江 */
 }
 
 
@@ -57,7 +56,7 @@ errorbody {
 * メニュー画面のボタン
 */
 .menuBlock {
-    margin-left:85px;
+    margin-left:60px;
     float:left;
     text-align:center;
     padding:30px;
@@ -67,7 +66,7 @@ errorbody {
 * 業務body定義
 */
 #gymBody {
-    height: 83%;
+    height: 82%;
     overflow: auto;
 }
 
