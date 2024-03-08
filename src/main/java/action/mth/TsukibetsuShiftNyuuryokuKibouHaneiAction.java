@@ -69,8 +69,8 @@ public class TsukibetsuShiftNyuuryokuKibouHaneiAction extends TsukibetsuShiftNyu
         // フォーム
         TsukibetsuShiftNyuuryokuForm tsukibetsuShiftForm = (TsukibetsuShiftNyuuryokuForm) form;
 
-        // 対象年月
-        String yearMonth = CommonUtils.getFisicalDay(CommonConstant.yearMonthNoSl);
+        // 対象年月　CommonUtils.getFisicalDay(CommonConstant.yearMonthNoSl);#073 修正
+        String yearMonth = tsukibetsuShiftForm.getYearMonth();
 
         // ロジック生成
         TsukibetsuShiftLogic tsukibetsuShiftLogic = new TsukibetsuShiftLogic();
