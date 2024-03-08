@@ -96,7 +96,8 @@ public class KinmuJissekiNyuryokuKakuninRegistAction extends Action {
 
         // セレクトボックスの取得
         ComboListUtilLogic comboListUtils = new ComboListUtilLogic();
-        Map<String, String> yearMonthCmbMap = comboListUtils.getComboYearMonth(CommonUtils.getFisicalDay(CommonConstant.yearMonthNoSl), 24, ComboListUtilLogic.KBN_YEARMONTH_PRE, false);
+        //プルダウン個数修正＃078
+        Map<String, String> yearMonthCmbMap = comboListUtils.getComboYearMonth(CommonUtils.getFisicalDay(CommonConstant.yearMonthNoSl), 22, ComboListUtilLogic.KBN_YEARMONTH_PRE, false);
 
         // データを変換する
         List<KinmuJissekiNyuryokuKakuninBean> kinmuJissekiList = this.dtoToBean(dateBeanList, kinmuJissekiMap, loginUserDto);
