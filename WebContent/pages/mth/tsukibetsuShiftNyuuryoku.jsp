@@ -52,7 +52,13 @@ if (listSize > intShowLength) {
     <script type="text/javascript" src="/kikin/pages/js/message.js"></script>
     <script type="text/javascript" language="Javascript1.1">
     <!--
-
+    /**
+     * 基本シフト反映　追加分#034,#054,#055,#056,#057 折居
+     */
+    function submitImportKihon() {
+        // サブミット
+        doSubmit('/kikin/tsukibetsuShiftNyuuryokuImportKihon.do');
+    }
     /**
      * 出勤希望反映
      */
@@ -553,7 +559,8 @@ if (listSize > intShowLength) {
             <%--　ボタンの改行をブロック＃026 --%>
             <div style="margin-left:50px;white-space: nowrap;">
 	          <input value="凡例表示" type="button" class="lngButton"  onclick="openWindow()" />
-	          <input value="基本シフト反映" type="button" class="lngButton"  />
+	          <%--  基本シフト反映のonclick処理を追加　#034,#054,#055,#056,#057 折居 --%>
+	          <input value="基本シフト反映" type="button" class="lngButton"   onclick="submitImportKihon()"/>
 	          <input value="出勤希望日反映" type="button" class="lngButton"  onclick="submitShukkinKibou()" />
 	        </div>
             </td>

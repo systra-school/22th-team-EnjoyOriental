@@ -263,6 +263,14 @@
         <forward name="success"  path="/menu.do"/>
       </action>
 		<!-- 月別シフト入力　#019 追加終わりww-->
+		<!-- 月別シフト入力基本シフト反映 03/05 入江-->
+      <action
+        path="/tsukibetsuShiftNyuuryokuImportKihon"
+        type="action.mth.TsukibetsuShiftNyuuryokuImportKihonAction"
+        name="tsukibetsuShiftNyuuryokuForm"
+        scope="session">
+        <forward name="success" path="/pages/mth/tsukibetsuShiftNyuuryoku.jsp"/>
+      </action>
       <!-- 日別シフト初期表示 -->
       <action
         path="/hibetsuShiftInit"
