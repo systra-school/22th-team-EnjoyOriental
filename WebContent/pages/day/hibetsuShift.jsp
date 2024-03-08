@@ -90,9 +90,9 @@
         </table>
       </div>
       <div id="gymBody" style="overflow: hidden;">
-        <div style="margin-left:80px;">
+        <div style="margin-left:160px;">
           <html:form>
-            <div style="height: 20px">
+            <div style="height: 20px; margin-left:405px;">
               表示年月：
               <html:link href="/kikin/hibetsuShiftPage.do?paging=back">前日</html:link>
               <bean:write name="hibetsuShiftForm" property="yearMonthDayDisp"/>
