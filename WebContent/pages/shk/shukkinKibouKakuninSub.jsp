@@ -65,7 +65,7 @@
         </table>
       </div>
       <div id="gymBody" style="overflow: auto; height : auto;">
-        <div style="margin-left:70px;">
+        <div id = "syukusyou">
           <html:form action="/shukkinKibouKakuninInit" >
             ï\é¶îNåéÅF
             <html:select name="shukkinKibouKakuninForm" property="yearMonth" onchange="submitSearch()">

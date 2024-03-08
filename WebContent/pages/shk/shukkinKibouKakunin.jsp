@@ -70,8 +70,9 @@
       </div>
       <%-- #031 heightí«â¡ --%>
       <div id="gymBody" style="overflow: hidden; height: auto;">
-        <div style="margin-left:10px;">
-          <html:form action="/shukkinKibouKakuninInit" >
+            <html:form action="/shukkinKibouKakuninInit" >
+            <%-- #031 heightí«â¡ --%>
+            <div id = "syukusyou">
             ï\é¶îNåéÅF
             <html:select name="shukkinKibouKakuninForm" property="yearMonth" onchange="submitSearch()">
             <html:optionsCollection name="shukkinKibouKakuninForm"
@@ -83,8 +84,6 @@
             <html:link href="/kikin/shukkinKibouKakuninPage.do?paging=next">éüÇ÷</html:link>
             <bean:write name="shukkinKibouKakuninForm" property="cntPage"/>/
             <bean:write name="shukkinKibouKakuninForm" property="maxPage"/>
-            <%-- #031 heightí«â¡ --%>
-            <div id = "syukusyou">
               <table width="1100px" cellpadding="0" cellspacing="0">
                 <tr>
                   <td width="150px" valign="top">
@@ -345,7 +344,6 @@
               </table>
             </div>
           </html:form>
-        </div>
       </div>
        <div id="footer" style = "padding:0;">
         <table>

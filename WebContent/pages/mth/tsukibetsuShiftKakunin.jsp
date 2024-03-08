@@ -98,8 +98,8 @@ if (listSize > intShowLength) {
       </div>
       <div id="gymBody" style="overflow: hidden;"><%-- height:485px; 追加　03/04内薗--%>
         <html:form action="/shukkinKibouKakuninInit" >
-          <div style="margin-left:50px;">
-            <div style="height: 25px;">
+          <div>
+            <div id="syukusyou"><%--印刷ボタンが表示されるよう、表を縮小するためのidを作成 03/04内薗 --%>
               表示年月：
               <bean:define id="sessionYearMonth" name="tsukibetsuShiftKakuninForm" property="yearMonth" type="String"/>
               <html:select property="yearMonth" name="tsukibetsuShiftKakuninForm"  onchange="submitSearch()">
@@ -112,8 +112,6 @@ if (listSize > intShowLength) {
               <html:link href="/kikin/tsukibetsuShiftKakuninPage.do?paging=next">次へ</html:link>
               <bean:write name="tsukibetsuShiftKakuninForm" property="cntPage"/>/
               <bean:write name="tsukibetsuShiftKakuninForm" property="maxPage"/>
-            </div>
-            <div id="syukusyou"><%--印刷ボタンが表示されるよう、表を縮小するためのidを作成 03/04内薗 --%>
             <table width="1100px" cellpadding="0" cellspacing="0">
               <tr>
                 <td width="150px" valign="top">

@@ -57,7 +57,7 @@ errorbody {
 * メニュー画面のボタン
 */
 .menuBlock {
-    margin-left:30px;
+    margin-left:85px;
     float:left;
     text-align:center;
     padding:30px;
@@ -203,4 +203,5 @@ errorbody {
 
 #syukusyou{
 	 transform: scale(0.95);
+	 text-align: -webkit-center;
 }

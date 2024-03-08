@@ -115,8 +115,8 @@ if (listSize > intShowLength) {
       <%-- 修正＃019　画面遷移 --%>
         <html:form action="/tsukibetsuShiftNyuuryokuInit" >
         <%-- 修正＃019　終わりww --%>
-          <div style="margin-left:50px;">
-            <div style="height: 25px;">
+          <div>
+            <div id="syukusyou"> <%-- 表のスクロールバーが表示されるよう、表を縮小するためのidを作成 03/01入江 --%>
               表示年月：
               <bean:define id="sessionYearMonth" name="tsukibetsuShiftNyuuryokuForm" property="yearMonth" type="String"/>
               <html:select property="yearMonth" name="tsukibetsuShiftNyuuryokuForm"  onchange="submitSearch()">
@@ -129,8 +129,6 @@ if (listSize > intShowLength) {
               <html:link href="/kikin/tsukibetsuShiftNyuuryokuPage.do?paging=next">次へ</html:link>
               <bean:write name="tsukibetsuShiftNyuuryokuForm" property="cntPage"/>/
               <bean:write name="tsukibetsuShiftNyuuryokuForm" property="maxPage"/>
-            </div>
-            <div id="syukusyou"> <%-- 表のスクロールバーが表示されるよう、表を縮小するためのidを作成 03/01入江 --%>
             <table width="1100px" cellpadding="0" cellspacing="0">
               <tr>
                 <td width="150px" valign="top">
