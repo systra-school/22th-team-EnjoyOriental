@@ -150,7 +150,7 @@
       <div id="gymBody">
         <html:form action="/shainMstMntRegist" >
           <div style="float: left; width: 100%;">
-            <div style="float: left; width: 804px; text-align: left; margin-left:100px;">
+            <div style="float: left; width: 804px; text-align: left; margin-left:130px;">
               表示年月：
               <html:select name="kinmuJissekiNyuryokuKakuninForm" property="yearMonth" onchange="submitSearch()">
               <html:optionsCollection name="kinmuJissekiNyuryokuKakuninForm"
@@ -164,8 +164,8 @@
               ：社員名&nbsp;<bean:write name="kinmuJissekiNyuryokuKakuninForm" property="shainName"/>
             </div>
           </div>
-          <div>
-            <div style="overflow: hidden; width: 1080px; margin-left:80px;">
+          <div id="mannaka2">
+            <div style="overflow: hidden; width: 1080px;">
             <table class="tblHeader" border="1" cellpadding="0" cellspacing="0">
               <tr>
                 <td width="80px" align="center">
@@ -201,7 +201,7 @@
               </tr>
             </table>
           </div>
-            <div style="overflow: auto; height: 400px; width: 1088px; margin-left:80px; ">
+            <div style="overflow: auto; height: 400px; width: 1088px;">
             <logic:iterate id="kinmuJissekiNyuryokuKakuninList" name="kinmuJissekiNyuryokuKakuninForm" property="kinmuJissekiNyuryokuKakuninList" indexId="idx">
               <table class="tblBody" border="1" cellpadding="0" cellspacing="0">
                 <tr>
