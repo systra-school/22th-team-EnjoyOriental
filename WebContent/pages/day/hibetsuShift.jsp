@@ -112,7 +112,7 @@
                   </div>
                 </td>
                 <td width="100%" valign="top">
-                  <div id="headRightTbl" style="overflow-y: scroll;overflow-x: hidden;width: <%=bodyRightDivWidth%>px; ">
+                  <div id="headRightTbl" style="overflow-y: hidden;overflow-x: hidden;width: <%=bodyRightDivWidth%>px; ">
                     <table border="1" cellpadding="0" cellspacing="0" class="tblHeader">
                       <tr>
                         <logic:iterate id="hibetsuShiftBean" name="hibetsuShiftForm" property="hibetsuShiftBeanList">

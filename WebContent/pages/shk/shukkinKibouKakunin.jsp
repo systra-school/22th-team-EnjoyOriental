@@ -53,7 +53,7 @@
   </head>
   <body>
     <div id="wrapper">
-      <div id="header" style = "padding:5px 0 0 0;">
+      <div id="header">
         <table>
           <tr>
             <td id="headLeft">

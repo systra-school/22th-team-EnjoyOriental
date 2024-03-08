@@ -32,13 +32,13 @@
             <logic:equal name="<%=RequestSessionNameConstant.SESSION_CMN_LOGIN_USER_INFO %>"
                          property="kengenId"
                          value="<%=CommonConstant.Kengen.KANRISYA.getId() %>">
-                メニュー(管理者)
+                　　メニュー(管理者)
             </logic:equal>
 
             <logic:equal name="<%=RequestSessionNameConstant.SESSION_CMN_LOGIN_USER_INFO %>"
                          property="kengenId"
                          value="<%=CommonConstant.Kengen.IPPAN.getId() %>">
-                メニュー(一般)
+                　　メニュー(一般)
             </logic:equal>
             </td>
             <td id="headRight">

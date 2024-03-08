@@ -8,13 +8,14 @@ body,wrapper,ヘッダー・フッター・ジムボディ共通定義のwidth�
 body {
     background-color: #FFFFFF;
     overflow: hidden;
-    width:1300px;
+    width:100%;
 }
 errorbody {
     background-color: red;
 }
 #wrapper {
-    width:1300px;
+    width:98%;
+    height:100%;
     padding:0px;
     margin: 10px; /* 外側余白を設定 02/28 入江 */
 }
@@ -24,7 +25,7 @@ errorbody {
 * ヘッダー、フッター共通定義
 */
 #header,#gymBody,#footer {
-    width: 1300px;
+    width: 100%;
     margin: 0px;
     padding: 5px auto;
     background-color: #66CCFF;
@@ -44,7 +45,7 @@ errorbody {
 #headCenter {
     font-size: 24px;
     color: #FFFF00;
-    width:800px;
+    width:100%;
     text-align:center;
 
 }
@@ -58,7 +59,7 @@ errorbody {
 .menuBlock {
     margin-left:30px;
     float:left;
-    text-align:"center";
+    text-align:center;
     padding:30px;
 }
 
@@ -66,7 +67,7 @@ errorbody {
 * 業務body定義
 */
 #gymBody {
-    height: 500px;
+    height: 83%;
     overflow: auto;
 }
 
@@ -75,7 +76,8 @@ errorbody {
 */
 #footer {
     bottom: 1%;
-    height: 40px;
+    height: 70px;
+    width: 100%;
 }
 #footLeft {
     float:left;
@@ -83,12 +85,11 @@ errorbody {
     text-align:left;
 }
 #footCenter {
-    float:left;
-    width:400px;
+    width:100%;
     text-align:center;
 }
 #footRight {
-    float:left;
+    float:right;
     width:400px;
     text-align:right;
 }
@@ -178,7 +179,6 @@ errorbody {
 */
 .tblBody {
     background-color: #E0FFFF;
-    text-wrap: nowrap;
 }
 /*
 * 文字色 黒
