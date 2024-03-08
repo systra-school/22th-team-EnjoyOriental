@@ -23,7 +23,7 @@
 <bean:size id="dateBeanListSize" name="shukkinKibouNyuuryokuForm"  property="dateBeanList"/>
 <%-- ‚·‚İ‚Ü‚¹‚ñA‚±‚±‚¢‚ç‚È‚©‚Á‚½‚Å‚·(L;ƒÖ;M)<bean:define id="offset" name="shukkinKibouNyuuryokuForm" property="offset" /> --%>
 <bean:define id="color" value="" type="java.lang.String"/>
-<bean:define id="showLength" value="18" type="java.lang.String"/>
+<bean:define id="showLength" value= "userId" type="java.lang.String"/>
 
 <html>
   <head>
@@ -60,6 +60,10 @@
     function openSearch(){
     	window.open("/kikin/shukkinKibouKakuninSubInit.do", "searchPopup", "menubar=no, toolbar=no, scrollbars=auto, resizable=yes, width=1000px, height=600px")
     }
+    
+    var str = user_Id;
+    var result = str.substring(2,5);
+    var userId = result - 0;
     
     </script>
     <title>o‹ÎŠó–]“ü—Í‰æ–Ê</title>
