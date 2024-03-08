@@ -62,7 +62,8 @@ public class TsukibetsuShiftNyuuryokuImportKihonAction extends TsukibetsuShiftNy
         // セレクトボックスの取得
         ComboListUtilLogic comboListUtils = new ComboListUtilLogic();
         Map<String, String> shiftCmbMap = comboListUtils.getComboShift(true);
-        Map<String, String> yearMonthCmbMap = comboListUtils.getComboYearMonth(CommonUtils.getFisicalDay(CommonConstant.yearMonthNoSl), 3, ComboListUtilLogic.KBN_YEARMONTH_NEXT, false);
+        //修正#079
+        Map<String, String> yearMonthCmbMap = comboListUtils.getComboYearMonth(CommonUtils.getFisicalDay(CommonConstant.yearMonthNoSl), 2, ComboListUtilLogic.KBN_YEARMONTH_NEXT, false);
         //社員ごとの基本シフト情報を格納するデータ
         Map<String,List<String>> weekShift = new LinkedHashMap<String,List<String>>();
         for(KihonShiftDto ShiftDto:kihonShiftDtoMap.values()) {
