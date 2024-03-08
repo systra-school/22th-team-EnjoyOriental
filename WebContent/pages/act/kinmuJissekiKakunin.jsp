@@ -60,7 +60,7 @@ String color = "";
       <div id="gymBody">
         <html:form action="/shainMstMntRegist" >
           <div style="float: left; width: 100%;">
-            <div style="float: left; width: 844px; text-align: left; margin-left:100px;">
+            <div style="float: left; width: 844px; text-align: left; margin-left:130px;">
               ï\é¶îNåéÅF
               <html:select name="kinmuJissekiKakuninForm" property="yearMonth" onchange="submitSearch()">
               <html:optionsCollection name="kinmuJissekiKakuninForm"
@@ -79,7 +79,8 @@ String color = "";
               </html:select>
             </div>
           </div>
-          <div style="width: 1088px; margin-left:100px;">
+          <div id="mannaka2">
+          <div style="width: 1088px;">
             <table class="tblHeader" border="1" cellpadding="0" cellspacing="0">
               <tr>
                 <td width="50px" align="center">
@@ -115,7 +116,7 @@ String color = "";
               </tr>
             </table>
           </div>
-          <div style="overflow: auto; height: 400px; width: 1088px; margin-left:100px;" >
+          <div style="overflow: auto; height: 400px; width: 1088px;" >
             <logic:iterate id="kinmuJissekiNyuryokuKakuninList" name="kinmuJissekiKakuninForm" property="kinmuJissekiNyuryokuKakuninList" indexId="idx">
               <table class="tblBody" border="1" cellpadding="0" cellspacing="0">
                 <tr>
@@ -166,6 +167,7 @@ String color = "";
                 </tr>
               </table>
             </logic:iterate>
+          </div>
           </div>
       </html:form>
     </div>
