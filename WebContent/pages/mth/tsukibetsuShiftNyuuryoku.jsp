@@ -280,8 +280,8 @@ if (listSize > intShowLength) {
                       </tr>
                       <logic:iterate offset="offset" length="<%=showLength %>" id="tsukibetsuShiftNyuuryokuBeanList" name="tsukibetsuShiftNyuuryokuForm" property="tsukibetsuShiftNyuuryokuBeanList">
                         <html:hidden name="tsukibetsuShiftNyuuryokuBeanList" property="registFlg" value="true" indexed="true"/>
-                    <%-- ↓<tr height="<%=heightSize %>px">を、<tr height="26px">に変更　02/27 入江 --%>
-                        <tr height="26px">
+                    <%-- ↓<tr height="<%=heightSize %>px">を、<tr height="25.5px">に変更　02/27 入江 --%>
+                        <tr height="25.5px">
                           <td width="40px" align="center" valign="middle">
                             <html:select property="shiftId01" name="tsukibetsuShiftNyuuryokuBeanList" indexed="true">
                             <html:optionsCollection name="tsukibetsuShiftNyuuryokuForm"
