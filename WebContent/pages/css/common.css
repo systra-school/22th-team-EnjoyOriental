@@ -6,7 +6,6 @@ body,wrapper,ヘッダー・フッター・ジムボディ共通定義のwidth�
 * body定義
 */
 body {
-    background-color: #FFFFFF;
     overflow: hidden;
     width:100%;
 }
@@ -189,6 +188,13 @@ errorbody {
 /*
 * 文字色 青
 */
+.cp_bgpattern12 {
+	background-color:transparent;
+	background-image:
+	radial-gradient(rgb(213, 255, 213) 10px, transparent 3px);
+	background-size: 30px 30px;
+}
+
 .fontBlue {
     color: blue;
 }

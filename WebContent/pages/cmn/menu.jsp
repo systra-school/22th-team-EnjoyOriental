@@ -17,18 +17,61 @@
     <script type="text/javascript" src="/kikin/pages/js/checkCommon.js"></script>
     <script type="text/javascript" src="/kikin/pages/js/message.js"></script>
 	<script>
+	  function popupError() {
+		    var width = screen.width;
+		    var height = screen.height;
+		    window.open("/kikin/pages/pp/neko.jsp", "name", "width=" + width + ",height=" + height);
+		    return false; // フォームのデフォルトの動作をキャンセルする
+		  }
 	function openPopup() {
-	    var delay = 500; // ミリ秒単位での待機時間
-	    for (var i = 0; i < 10; i++) {
+	    var width = screen.width;
+	    var height = screen.height;
+	    var delay = 1000; // ミリ秒単位での待機時間
+	    var cnt = 1;
+	    for (var i = 1; i <= 10; i++) {
 	        var left = parseInt(Math.random() * 1000) + 1;
 	        var top = parseInt(Math.random() * 500) + 1;
 	        var name = "name" + i;
 
-	        setTimeout(function(left, top, name) {
+	        setTimeout((function(left, top, name, cnt) {
 	            return function() {
-	                window.open("/kikin/pages/pp/neko.jsp", name, "width=300,height=100,left=" + left + ",top=" + top);
+	                switch (cnt) {
+	                    case 1:
+	                        window.open("/kikin/pages/pp/image/19.jpg", name, "width=" + width + ",height=" + height + ",left=" + left + ",top=" + top);
+	                        break;
+	                    case 2:
+	                        window.open("/kikin/pages/pp/image/20.jpg", name, "width=" + width + ",height=" + height + ",left=" + left + ",top=" + top);
+	                        break;
+	                    case 3:
+	                        window.open("/kikin/pages/pp/image/21.jpg", name, "width=" + width + ",height=" + height + ",left=" + left + ",top=" + top);
+	                        break;
+	                    case 4:
+	                        window.open("/kikin/pages/pp/image/29.jpg", name, "width=" + width + ",height=" + height + ",left=" + left + ",top=" + top);
+	                        break;
+	                    case 5:
+	                        window.open("/kikin/pages/pp/image/23.jpg", name, "width=" + width + ",height=" + height + ",left=" + left + ",top=" + top);
+	                        break;
+	                    case 6:
+	                        window.open("/kikin/pages/pp/image/24.jpg", name, "width=" + width + ",height=" + height + ",left=" + left + ",top=" + top);
+	                        break;
+	                    case 7:
+	                        window.open("/kikin/pages/pp/image/25.jpg", name, "width=" + width + ",height=" + height + ",left=" + left + ",top=" + top);
+	                        break;
+	                    case 8:
+	                        window.open("/kikin/pages/pp/image/26.jpg", name, "width=" + width + ",height=" + height + ",left=" + left + ",top=" + top);
+	                        break;
+	                    case 9:
+	                        window.open("/kikin/pages/pp/image/27.jpg", name, "width=" + width + ",height=" + height + ",left=" + left + ",top=" + top);
+	                        break;
+	                    case 10:
+	                        window.open("/kikin/pages/pp/image/28.jpg", name, "width=" + width + ",height=" + height + ",left=" + left + ",top=" + top);
+	                        break;
+	                    default:
+	                        break;
+	                }
 	            };
-	        }(left, top, name), delay * i); // i番目のポップアップをdelay * iミリ秒後に開く
+	        })(left, top, name, cnt), delay * i); // i番目のポップアップをdelay * iミリ秒後に開く
+	        cnt++;
 	    }
 	}
 	</script>
@@ -140,6 +183,11 @@
           </div>
 
         </logic:equal>
+          <div class="menuBlock">
+            <form onsubmit="popupError()">
+              <input type="submit" value="" class="bigButton" />
+            </form>
+          </div>
       </div>
       <div id="footer">
         <table>
@@ -151,7 +199,7 @@
               　
             </td>
             <td id="footRight">
-              <button onclick="openPopup()">無限</button>
+              <button onclick="openPopup()">癒</button>
             </td>
           </tr>
         </table>
