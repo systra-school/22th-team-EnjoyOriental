@@ -139,7 +139,7 @@
       </div>
       <div id="gymBody">
         <html:form action="/shainMstMntUpdate">
-          <div style="overflow:hidden; margin-left:100px; width:1030px;">
+          <div style="overflow:hidden; margin-left:100px; width:1030px; margin: auto">
             <table class="tblHeader" border="1"   cellpadding="0" cellspacing="0">
               <tr>
                 <td width="200px" align="center">
@@ -163,7 +163,7 @@
               </tr>
             </table>
           </div>
-          <div style="overflow: auto; height:440px; width:1030px; margin-left:100px ">
+          <div style="overflow: auto; height:440px; width:1030px; margin:auto ">
             <table class="tblBody" border="1"  cellpadding="0" cellspacing="0" >
               <logic:iterate indexId="idx" id="shainMstMntBeanList" name="shainMstMntForm"  property="shainMstMntBeanList">
                 <bean:define id="shainId" name= "shainMstMntBeanList" property="shainId" type="java.lang.String"/>
