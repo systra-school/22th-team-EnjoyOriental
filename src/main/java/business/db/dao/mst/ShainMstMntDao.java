@@ -288,5 +288,69 @@ public class ShainMstMntDao extends AbstractDao {
             disConnect();
         }
     }
+    /**
+     * 社員マスタのデータを登録する。
+     *
+     * @param mshainDto 社員マスタＤｔｏ
+     * @author Kazuya.Naraki
+     */
+    public void registShiftMst(ShainMstMntDto mshainDto, LoginUserDto loginUserDto) throws SQLException{
 
+        try {
+            // コネクション接続
+            this.connect();
+
+            StringBuffer strSql = new StringBuffer();
+            strSql.append("INSERT INTO ");
+            strSql.append("M_base_shift ");
+            strSql.append(" ( ");
+            strSql.append("SHAIN_ID, ");
+            strSql.append("MONDAY, ");
+            strSql.append("TUESDAY, ");
+            strSql.append("WEDNESDAY, ");
+            strSql.append("THURSDAY, ");
+            strSql.append("FRIDAY, ");
+            strSql.append("SATURDAY, ");
+            strSql.append("SUNDAY, ");
+            strSql.append("CREATE_SHAIN_ID, ");
+            strSql.append("CREATE_DT, ");
+            strSql.append("UPDATE_SHAIN_ID, ");
+            strSql.append("UPDATE_DT ");
+            strSql.append(") ");
+            strSql.append("VALUES ");
+            strSql.append(" ( ");
+            strSql.append("? ");
+            strSql.append(",-1 ");
+            strSql.append(",-1 ");
+            strSql.append(",-1 ");
+            strSql.append(",-1 ");
+            strSql.append(",-1 ");
+            strSql.append(",-1 ");
+            strSql.append(",-1 ");
+            strSql.append(",? ");
+            strSql.append(", current_timestamp()");
+            strSql.append(",? ");
+            strSql.append(", current_timestamp()");
+            strSql.append(") ");
+
+            PreparedStatement ps = connection.prepareStatement(strSql.toString());
+
+            ps.setString(1, mshainDto.getShainId());
+            ps.setString(2, loginUserDto.getShainId());
+            ps.setString(3, loginUserDto.getShainId());
+
+            // ログ出力
+            log.info(ps);
+
+            // SQLを実行する
+            ps.executeUpdate();
+
+        } catch (SQLException e) {
+            // 例外発生
+            throw e;
+        } finally {
+            // コネクション切断
+            disConnect();
+        }
+    }
 }

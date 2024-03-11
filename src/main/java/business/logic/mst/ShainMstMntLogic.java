@@ -6,15 +6,16 @@
  */
 package business.logic.mst;
 
-import static constant.DbConstant.M_shain;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.List;
+
 import business.db.dao.mst.ShainMstMntDao;
 import business.dto.LoginUserDto;
 import business.dto.mst.ShainMstMntDto;
 import business.logic.utils.CheckUtils;
 import business.logic.utils.CommonUtils;
+import constant.DbConstant.M_shain;
 
 /**
  * 説明：社員マスタメンテナンス処理のロジック
@@ -92,6 +93,7 @@ public class ShainMstMntLogic {
 
         // 登録
         shainMstMntDao.registShainMst(shainMstMntDto, loginUserDto);
+        shainMstMntDao.registShiftMst(shainMstMntDto,loginUserDto);
 
     }
 
