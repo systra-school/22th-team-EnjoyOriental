@@ -124,7 +124,7 @@
       </div>
       <div id="gymBody">
         <html:form action="/shiftMstMntRegist">
-          <div style="width: 630px; margin-left:300px;">
+          <div style="width: 630px;@margin:auto;">
             <table class="tblHeader" border="1" cellpadding="0" cellspacing="0">
               <tr>
                 <td width="180px" align="center">
@@ -142,7 +142,7 @@
               </tr>
             </table>
           </div>
-          <div style="overflow: auto; height: 400px; width: 630px; margin-left:300px;">
+          <div style="overflow: auto; height: 400px; width: 630px; margin:auto;">
             <table class="tblBody" border="1" cellpadding="0" cellspacing="0">
               <tr>
                 <td width="180px"  align="center">

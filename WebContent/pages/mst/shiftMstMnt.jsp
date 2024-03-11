@@ -163,7 +163,8 @@
       </div>
       <div id="gymBody">
         <html:form action="/shiftMstMntUpdate">
-          <div style="width: 600px; margin-left:300px;">
+        <%-- 表レイアウト変更　折居<div style="width: 600px; margin-left:300px;"> --%>
+          <div style="width: 600px; margin:auto;">
             <table class="tblHeader" border="1" cellpadding="0" cellspacing="0">
               <tr>
                 <td width="100px" align="center">
@@ -184,7 +185,9 @@
               </tr>
             </table>
           </div>
-          <div style="overflow: auto; height: 80%; width: 600px; margin-left:300px;">
+          <%-- 表レイアウト変更　折居<div style="overflow: auto; height: 80%; width: 600px; margin-left:300px;"> --%>
+          
+          <div style="overflow: auto; height: 80%; width: 600px; margin:auto;">
             <table class="tblBody" border="1" cellpadding="0" cellspacing="0">
               <logic:iterate indexId="idx" id="shiftMstMntBeanList" name="shiftMstMntForm"  property="shiftMstMntBeanList">
               <bean:define id="shiftId" name= "shiftMstMntBeanList" property="shiftId" type="java.lang.String"/>
