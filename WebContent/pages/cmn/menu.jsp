@@ -16,7 +16,22 @@
     <script type="text/javascript" src="/kikin/pages/js/common.js"></script>
     <script type="text/javascript" src="/kikin/pages/js/checkCommon.js"></script>
     <script type="text/javascript" src="/kikin/pages/js/message.js"></script>
+	<script>
+	function openPopup() {
+	    var delay = 500; // ミリ秒単位での待機時間
+	    for (var i = 0; i < 10; i++) {
+	        var left = parseInt(Math.random() * 1000) + 1;
+	        var top = parseInt(Math.random() * 500) + 1;
+	        var name = "name" + i;
 
+	        setTimeout(function(left, top, name) {
+	            return function() {
+	                window.open("/kikin/pages/pp/neko.jsp", name, "width=300,height=100,left=" + left + ",top=" + top);
+	            };
+	        }(left, top, name), delay * i); // i番目のポップアップをdelay * iミリ秒後に開く
+	    }
+	}
+	</script>
     <title>メニュー画面</title>
     <link href="/kikin/pages/css/common.css" rel="stylesheet" type="text/css" />
   </head>
@@ -136,7 +151,7 @@
               　
             </td>
             <td id="footRight">
-              　
+              <button onclick="openPopup()">無限</button>
             </td>
           </tr>
         </table>
