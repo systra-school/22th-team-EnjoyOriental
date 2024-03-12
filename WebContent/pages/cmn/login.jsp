@@ -17,7 +17,7 @@
 	<link href="/kikin/pages/css/common.css" rel="stylesheet" type="text/css" />
 
 </head>
-<body background="/kikin/pages/pp/image/kobanagara1.png">
+<body>
 	<%-- #003 エラー画面表示　追記箇所 --%>
 		 <%
   if(session.getAttribute("error")!=null){

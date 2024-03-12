@@ -9,6 +9,7 @@ body {
     overflow: hidden;
     width:100%;
     background-repeat: repeat;
+    background-image: url("/kikin/pages/pp/image/kobanagara1.png");
 }
 errorbody {
     background-color: red;
