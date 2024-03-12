@@ -60,8 +60,8 @@
 		      <html:password property="password" size="16" redisplay="false" value="sh0001"/>
 		      <br/>
 		      <br/>
-		      <html:submit property="submit" value="送信" />
-		      <html:reset value="リセット" />
+		      <input type ="submit" value="送信" class = "smlButton"/>
+		      <input type = "reset" value="リセット"  class = "smlButton"/>
 		    
 			</html:form>
 		    sh0001<BR>
