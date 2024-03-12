@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
+<html style="overflow-y: hidden;">
 <head>
 <meta charset="UTF-8">
     <style>
@@ -24,13 +24,13 @@
         }
         
         /* 各画像の揺れるアニメーションの設定 */
-        .image1 { top: 55px; left: 400px; animation: shake1 0.5s infinite alternate; }
-        .image2 { top: 45px; left: 780px; animation: shake2 0.5s infinite alternate; }
-        .image3 { top: 280px; left: 190px; animation: shake3 0.5s infinite alternate; }
-        .image4 { top: 280px; left: 570px; animation: shake4 0.5s infinite alternate; }
-        .image5 { top: 280px; left: 980px; animation: shake5 0.5s infinite alternate; }
-        .image6 { top: 520px; left: 380px; animation: shake6 0.5s infinite alternate; }
-        .image7 { top: 520px; left: 820px; animation: shake7 0.5s infinite alternate; }
+        .image1 { top: 50px; left: 405px; animation: shake1 0.5s infinite alternate; }
+        .image2 { top: 40px; left: 780px; animation: shake2 0.5s infinite alternate; }
+        .image3 { top: 290px; left: 190px; animation: shake3 0.5s infinite alternate; }
+        .image4 { top: 300px; left: 585px; animation: shake4 0.5s infinite alternate; }
+        .image5 { top: 295px; left: 985px; animation: shake5 0.5s infinite alternate; }
+        .image6 { top: 525px; left: 362px; animation: shake6 0.5s infinite alternate; }
+        .image7 { top: 510px; left: 825px; animation: shake7 0.5s infinite alternate; }
 
         @keyframes shake1 {
             0% { transform: translateX(0); }
