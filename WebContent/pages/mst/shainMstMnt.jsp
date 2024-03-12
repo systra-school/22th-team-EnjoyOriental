@@ -210,8 +210,8 @@
               Å@
             </td>
             <td id="footRight">
-              <input value="êVãKìoò^" type="button" class="smlButton"  onclick="shainMstMntRegistInit()" />
-              <input value="çXêV" type="button" class="smlButton"  onclick="shainMstMntUpdate()" />
+              <input value="êVãKìoò^" type="button" class="smlButton"  onclick="shainMstMntRegistInit()" style="float: left;"/>
+              <input value="çXêV" type="button" class="smlButton"  onclick="shainMstMntUpdate()" style="float: left;" />
             </td>
           </tr>
         </table>

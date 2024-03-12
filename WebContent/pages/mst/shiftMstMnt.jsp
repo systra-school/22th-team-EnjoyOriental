@@ -237,8 +237,8 @@
               Å@
             </td>
             <td id="footRight">
-              <input value="êVãKìoò^" type="button" class="smlButton"  onclick="shiftMstMntRegistInit()" />
-              <input value="çXêV" type="button" class="smlButton"  onclick="shiftMstMntUpdate()" />
+              <input value="êVãKìoò^" type="button" class="smlButton"  onclick="shiftMstMntRegistInit()" style="float: left;" />
+              <input value="çXêV" type="button" class="smlButton"  onclick="shiftMstMntUpdate()" style="float: left;" />
             </td>
           </tr>
         </table>

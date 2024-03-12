@@ -378,12 +378,12 @@ if (listSize > intShowLength) {
       </div>
       <div id="footer">
       	<div style="margin-left:50px;">
-          <input value="–}—á•\Ž¦" type="button" class="lngButton"  onclick="openWindow()" />
+          <input value="–}—á•\Ž¦" type="button" class="lngButton"  onclick="openWindow()" style="margin-left:50px;" />
         </div>
         <table>
           <tr>
             <td id="footLeft">
-              <input value="ˆóü" type="button" class="smlButton"  onclick="submitPrint()" />
+              <input value="ˆóü" type="button" class="smlButton"  onclick="submitPrint()" style="margin-left: 70px;" />
             </td>
             <td id="footCenter" style="text-align: right;">
             </td>

@@ -556,10 +556,10 @@ if (listSize > intShowLength) {
             <td id="footLeft">
             <%--　ボタンの改行をブロック＃026 --%>
             <div style="margin-left:50px;white-space: nowrap;">
-	          <input value="凡例表示" type="button" class="lngButton"  onclick="openWindow()" />
+	          <input value="凡例表示" type="button" class="lngButton"  onclick="openWindow()" style="float: left;" />
 	          <%--  基本シフト反映のonclick処理を追加　#034,#054,#055,#056,#057 折居 --%>
-	          <input value="基本シフト反映" type="button" class="lngButton"   onclick="submitImportKihon()"/>
-	          <input value="出勤希望日反映" type="button" class="lngButton"  onclick="submitShukkinKibou()" />
+	          <input value="基本シフト反映" type="button" class="lngButton"   onclick="submitImportKihon()" style="float: left;"/>
+	          <input value="出勤希望日反映" type="button" class="lngButton"  onclick="submitShukkinKibou()" style="float: left;" />
 	        </div>
             </td>
             <td id="footCenter" style="text-align: right;">

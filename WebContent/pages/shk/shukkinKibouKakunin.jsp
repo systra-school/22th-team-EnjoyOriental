@@ -349,8 +349,8 @@
         <table>
           <tr>
             <td id="footLeft">
-	          <div style="margin-left:50px;">
-	            <input value="–}—á•\Ž¦" type="button" class="lngButton"  onclick="openWindow()" />
+	          <div>
+	            <input value="–}—á•\Ž¦" type="button" class="lngButton"  onclick="openWindow()" style="margin-left:50px;" />
 	          </div>
             </td>
             <td id="footCenter">
