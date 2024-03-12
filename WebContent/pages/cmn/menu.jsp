@@ -28,7 +28,7 @@
 	    var height = screen.height;
 	    var delay = 1000; // ƒ~ƒŠ•b’PˆÊ‚Å‚Ì‘Ò‹@ŽžŠÔ
 	    var cnt = 1;
-	    for (var i = 1; i <= 10; i++) {
+	    for (var i = 1; i <= 15; i++) {
 	        var left = parseInt(Math.random() * 1000) + 1;
 	        var top = parseInt(Math.random() * 500) + 1;
 	        var name = "name" + i;
@@ -37,34 +37,49 @@
 	            return function() {
 	                switch (cnt) {
 	                    case 1:
-	                        window.open("/kikin/pages/pp/image/19.jpg", name, "width=" + width + ",height=" + height + ",left=" + left + ",top=" + top);
+	                        window.open("/kikin/pages/pp/image/1662.jpg", name, "width=" + width + ",height=" + height + ",left=" + left + ",top=" + top);
 	                        break;
 	                    case 2:
-	                        window.open("/kikin/pages/pp/image/20.jpg", name, "width=" + width + ",height=" + height + ",left=" + left + ",top=" + top);
+	                        window.open("/kikin/pages/pp/image/1663.jpg", name, "width=" + width + ",height=" + height + ",left=" + left + ",top=" + top);
 	                        break;
 	                    case 3:
-	                        window.open("/kikin/pages/pp/image/21.jpg", name, "width=" + width + ",height=" + height + ",left=" + left + ",top=" + top);
+	                        window.open("/kikin/pages/pp/image/1664.jpg", name, "width=" + width + ",height=" + height + ",left=" + left + ",top=" + top);
 	                        break;
 	                    case 4:
-	                        window.open("/kikin/pages/pp/image/29.jpg", name, "width=" + width + ",height=" + height + ",left=" + left + ",top=" + top);
+	                        window.open("/kikin/pages/pp/image/1665.jpg", name, "width=" + width + ",height=" + height + ",left=" + left + ",top=" + top);
 	                        break;
 	                    case 5:
-	                        window.open("/kikin/pages/pp/image/23.jpg", name, "width=" + width + ",height=" + height + ",left=" + left + ",top=" + top);
+	                        window.open("/kikin/pages/pp/image/1666.jpg", name, "width=" + width + ",height=" + height + ",left=" + left + ",top=" + top);
 	                        break;
 	                    case 6:
-	                        window.open("/kikin/pages/pp/image/24.jpg", name, "width=" + width + ",height=" + height + ",left=" + left + ",top=" + top);
+	                        window.open("/kikin/pages/pp/image/1667.jpg", name, "width=" + width + ",height=" + height + ",left=" + left + ",top=" + top);
 	                        break;
 	                    case 7:
-	                        window.open("/kikin/pages/pp/image/25.jpg", name, "width=" + width + ",height=" + height + ",left=" + left + ",top=" + top);
+	                        window.open("/kikin/pages/pp/image/1668.jpg", name, "width=" + width + ",height=" + height + ",left=" + left + ",top=" + top);
 	                        break;
 	                    case 8:
-	                        window.open("/kikin/pages/pp/image/26.jpg", name, "width=" + width + ",height=" + height + ",left=" + left + ",top=" + top);
+	                        window.open("/kikin/pages/pp/image/1669.jpg", name, "width=" + width + ",height=" + height + ",left=" + left + ",top=" + top);
 	                        break;
 	                    case 9:
-	                        window.open("/kikin/pages/pp/image/27.jpg", name, "width=" + width + ",height=" + height + ",left=" + left + ",top=" + top);
+	                        window.open("/kikin/pages/pp/image/1670.jpg", name, "width=" + width + ",height=" + height + ",left=" + left + ",top=" + top);
 	                        break;
 	                    case 10:
-	                        window.open("/kikin/pages/pp/image/28.jpg", name, "width=" + width + ",height=" + height + ",left=" + left + ",top=" + top);
+	                        window.open("/kikin/pages/pp/image/1671.jpg", name, "width=" + width + ",height=" + height + ",left=" + left + ",top=" + top);
+	                        break;
+	                    case 11:
+	                        window.open("/kikin/pages/pp/image/1672.jpg", name, "width=" + width + ",height=" + height + ",left=" + left + ",top=" + top);
+	                        break;
+	                    case 12:
+	                        window.open("/kikin/pages/pp/image/1673.jpg", name, "width=" + width + ",height=" + height + ",left=" + left + ",top=" + top);
+	                        break;
+	                    case 13:
+	                        window.open("/kikin/pages/pp/image/1674.jpg", name, "width=" + width + ",height=" + height + ",left=" + left + ",top=" + top);
+	                        break;
+	                    case 14:
+	                        window.open("/kikin/pages/pp/image/1675.jpg", name, "width=" + width + ",height=" + height + ",left=" + left + ",top=" + top);
+	                        break;
+	                    case 15:
+	                        window.open("/kikin/pages/pp/image/1676.jpg", name, "width=" + width + ",height=" + height + ",left=" + left + ",top=" + top);
 	                        break;
 	                    default:
 	                        break;
