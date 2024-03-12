@@ -37,8 +37,10 @@
                   <td id="headLeft">
                     　
                   </td>
-                  <td id="headCenter">
+                  <td id="headCenter" >
+                    <div class = "titel">
                     ログイン
+                    </div>
                   </td>
                   <td id="headRight">
                     　
@@ -61,7 +63,7 @@
 		      <html:submit property="submit" value="送信" />
 		      <html:reset value="リセット" />
 		    
-</html:form>
+			</html:form>
 		    sh0001<BR>
 		    sh0002<BR>
 		    sh0003<BR>

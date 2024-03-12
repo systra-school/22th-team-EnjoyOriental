@@ -153,7 +153,9 @@
               <input value="戻る" type="button" class="smlButton"  onclick="doSubmit('/kikin/shiftMstMntBack.do')" />
             </td>
             <td id="headCenter">
+            <div class = "titel">
               シフトマスタメンテナンス
+            </div>
             </td>
             <td id="headRight">
               <input value="ログアウト" type="button" class="smlButton"  onclick="logout()" />

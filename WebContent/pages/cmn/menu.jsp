@@ -105,13 +105,13 @@
             <logic:equal name="<%=RequestSessionNameConstant.SESSION_CMN_LOGIN_USER_INFO %>"
                          property="kengenId"
                          value="<%=CommonConstant.Kengen.KANRISYA.getId() %>">
-                <span style="background-color: #ffffbb; border: 3px dashed #ff9872; border-radius: 45px">　メニュー(管理者)　</span>
+                <span class = "titel" style="margin-left: 70px;">　メニュー(管理者)　</span>
             </logic:equal>
 
             <logic:equal name="<%=RequestSessionNameConstant.SESSION_CMN_LOGIN_USER_INFO %>"
                          property="kengenId"
                          value="<%=CommonConstant.Kengen.IPPAN.getId() %>">
-                <span style="background-color: #ffffbb; border: 3px dashed #ff9872; border-radius: 45px">　メニュー(一般)　</span>
+                <span class = "titel" style="margin-left: 70px;">　メニュー(一般)　</span>
             </logic:equal>
             </td>
             <td id="headRight">

@@ -129,7 +129,9 @@
               <input value="戻る" type="button" class="smlButton"  onclick="doSubmit('/kikin/shainMstMntBack.do')" />
             </td>
             <td id="headCenter">
+            <div class = "titel">
               社員マスタメンテナンス
+            </div>
             </td>
             <td id="headRight">
               <input value="ログアウト" type="button" class="smlButton"  onclick="logout()" />

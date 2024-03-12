@@ -103,7 +103,9 @@ if (listSize > intShowLength) {
               <input value="戻る" type="button" class="smlButton"  onclick="doSubmit('/kikin/tsukibetsuShiftNyuuryokuBack.do')" />
             </td>
             <td id="headCenter">
+            <div class = "titel">
               月別シフト入力
+            </div>
             </td>
             <td id="headRight">
               <input value="ログアウト" type="button" class="smlButton"  onclick="logout()" />

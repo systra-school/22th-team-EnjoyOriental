@@ -50,7 +50,9 @@
               <input value="戻る" type="button" class="smlButton"  onclick="doSubmit('/kikin/kihonShiftBack.do')" />
             </td>
             <td id="headCenter">
+            <div class = "titel">
               基本シフト確認
+            </div>
             </td>
             <td id="headRight">
               <input value="ログアウト" type="button" class="smlButton"  onclick="logout()" />

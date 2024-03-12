@@ -123,7 +123,7 @@
   </head>
   <body>
     <div id="header">
-      <div style="display: inline;">
+      <div class = "titel" style="display: inline;">
         社員マスタメンテナンス
       </div>
 

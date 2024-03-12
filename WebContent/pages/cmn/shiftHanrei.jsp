@@ -42,7 +42,9 @@
             <td id="headLeft">
             </td>
             <td id="headCenter">
+            <div class = "titel">
               ƒVƒtƒg–}—á
+            </div>
             </td>
             <td id="headRight">
             </td>

@@ -49,7 +49,9 @@ String color = "";
               <input value="戻る" type="button" class="smlButton"  onclick="doSubmit('/kikin/kinmuJissekiKakuninBack.do')" />
             </td>
             <td id="headCenter">
+            <div class = "titel">
               勤務実績確認
+            </div>
             </td>
             <td id="headRight">
               <input value="ログアウト" type="button" class="smlButton"  onclick="logout()" />

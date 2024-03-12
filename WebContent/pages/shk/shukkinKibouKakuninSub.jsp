@@ -56,7 +56,9 @@
               　
             </td>
             <td id="headCenter">
+            <div class = "titel">
               出勤希望確認
+            </div>
             </td>
             <td id="headRight">
               　

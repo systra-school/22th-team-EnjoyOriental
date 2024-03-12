@@ -83,7 +83,9 @@
               <input value="戻る" type="button" class="smlButton"  onclick="doSubmit('/kikin/hibetsuShiftBack.do')" />
             </td>
             <td id="headCenter">
+            <div class = "titel">
               日別シフト確認画面
+            </div>
             </td>
             <td id="headRight">
               <input value="ログアウト" type="button" class="smlButton"  onclick="logout()" />

@@ -35,7 +35,7 @@ errorbody {
 */
 #header {
     top: 2px;
-    height: 40px;
+    height: 50px;
 }
 #headLeft {
     width:250px;
@@ -51,6 +51,16 @@ errorbody {
     width:250px;
     text-align:right;
 }
+
+.titel{
+    width: 300px;
+    height: 35px;
+    background-color: #ffffbb;
+    border: 3px dashed #ff9872;
+    border-radius: 45px;
+    margin: auto;	
+}
+
 /*
 * メニュー画面のボタン
 */
