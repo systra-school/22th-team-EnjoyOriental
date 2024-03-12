@@ -137,6 +137,22 @@ errorbody {
 .smlButton {
     width: 100px;
     height: 30px;
+    display: block;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	/* width: 120px; */
+	margin: auto;
+	font-weight: bold;
+	color:#ffc489;
+	background-color: #ffff89;
+	border-color: #ffff89;
+	border-right-color: #ffff89;
+	border-bottom: 2px solid #ffc489;
+	border-radius: 100vh;
+	box-shadow: 0 2px 7px rgba(0, 0, 0, .3);
+	-webkit-box-shadow: 0 2px 7px rgba(0, 0, 0, .3);
+	transition: 0.5s;
 }
 
 /*
@@ -151,7 +167,6 @@ errorbody {
 	text-decoration: none;
 	/* width: 120px; */
 	margin: auto;
-	padding: 1rem 4rem;
 	font-weight: bold;
 	color:#ffc489;
 	background-color: #ffff89;
