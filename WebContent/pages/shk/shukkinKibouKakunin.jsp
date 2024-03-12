@@ -71,7 +71,7 @@
         </table>
       </div>
       <%-- #031 height’Ç‰Á --%>
-      <div id="gymBody" style="overflow: hidden; height: auto;">
+      <div id="gymBody" style="overflow: hidden; height: 530px;">
             <html:form action="/shukkinKibouKakuninInit" >
             <%-- #031 height’Ç‰Á --%>
             <div id = "syukusyou">
