@@ -73,7 +73,9 @@
     <link href="/kikin/pages/css/common.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+  
     <div id="wrapper">
+    <div class="bg_pattern Polka_v2">
       <div id="header">
         <table>
           <tr>
@@ -1120,6 +1122,7 @@
           </tr>
         </table>
       </div>
+    </div>
     </div>
   </body>
 </html>
