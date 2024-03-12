@@ -120,7 +120,7 @@
           </tr>
         </table>
       </div>
-      <div id="gymBody">
+      <div id="gymBodyMenu">
         <logic:equal name="<%=RequestSessionNameConstant.SESSION_CMN_LOGIN_USER_INFO %>"
                      property="kengenId"
                      value="<%=CommonConstant.Kengen.KANRISYA.getId() %>">
@@ -206,7 +206,10 @@
       </div>
       <div id="footer">
         <table>
-          <tr>
+          <tr style="text-align: center;">
+            <td width="21%">
+            	<p style="font-size: 12px;">${shainName}</p>
+            	<img alt="No image" src="/kikin/pages/pp/image/${shainId}.jpg" width="60px" height="60px" style="border-radius: 50%;"></td>
             <td id="footLeft">
               Å@
             </td>

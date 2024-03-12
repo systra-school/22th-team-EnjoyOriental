@@ -78,7 +78,11 @@ errorbody {
     height: 82%;
     overflow: auto;
 }
-
+/*メニュー画面でのみ使用するgymBody*/
+#gymBodyMenu{
+	height:75%;
+	overflow:auto;
+}
 /*
 * フッター定義
 */

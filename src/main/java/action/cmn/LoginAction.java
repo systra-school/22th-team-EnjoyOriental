@@ -75,7 +75,19 @@ public class LoginAction extends Action {
 
         // 社員情報を取得する
         LoginDto loginDto = loginLogic.getShainData(loginForm);
-
+        
+        //shainIdを取得する
+        String shainId = req.getParameter("shainId");
+        
+        //shainIdを割り当てる
+        session.setAttribute("shainId", shainId);
+        
+        //shainNameを取得する
+        String shainName = loginLogic.getShainData(loginForm).getShainName();
+        
+        //shainNameを割り当てる
+        session.setAttribute("shainName", shainName);
+        
         if (CheckUtils.isEmpty(loginDto)) {
             forward = "error";
           //修正#003 追記
