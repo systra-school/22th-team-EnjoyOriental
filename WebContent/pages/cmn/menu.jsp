@@ -214,7 +214,7 @@
               Å@
             </td>
             <td id="footRight">
-              <button onclick="openPopup()">ñ¸</button>
+              <button class = button onclick="openPopup()" style = "float: right;">ñ¸</button>
             </td>
           </tr>
         </table>
