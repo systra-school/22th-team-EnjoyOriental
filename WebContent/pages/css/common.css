@@ -154,6 +154,12 @@ errorbody {
 	-webkit-box-shadow: 0 2px 7px rgba(0, 0, 0, .3);
 	transition: 0.5s;
 }
+.smlButton:hover {
+	color: #ffff89;
+	background: #ffc489;
+	border-bottom: 2px solid #ffff89;
+	transform: translateY(3px);
+}
 
 /*
 * ボタンサイズ大
@@ -208,6 +214,12 @@ errorbody {
 	-webkit-box-shadow: 0 2px 7px rgba(0, 0, 0, .3);
 	transition: 0.5s;
 }
+.lngButton:hover {
+	color: #ffff89;
+	background: #ffc489;
+	border-bottom: 2px solid #ffff89;
+	transform: translateY(3px);
+}
 
 .button {
     display: block;
@@ -225,6 +237,12 @@ errorbody {
 	box-shadow: 0 2px 7px rgba(0, 0, 0, .3);
 	-webkit-box-shadow: 0 2px 7px rgba(0, 0, 0, .3);
 	transition: 0.5s;
+}
+.button:hover {
+	color: #ffff89;
+	background: #ffc489;
+	border-bottom: 2px solid #ffff89;
+	transform: translateY(3px);
 }
 
 /*
