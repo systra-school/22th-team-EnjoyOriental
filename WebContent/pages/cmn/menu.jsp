@@ -330,7 +330,7 @@
         	case 0:
         		img = "/kikin/pages/pp/image/jojo.png";
         		msg = "/kikin/pages/pp/image/m1.png";
-        		sze = "float:right; width:120px; height:230px;";
+        		sze = "float:right; width:300px; height:230px;";
         		anm = "slideinLeft";
         		break;
         	case 1:
@@ -342,7 +342,7 @@
         	default:
         		img = "/kikin/pages/pp/image/hagaren.png";
         		msg = "/kikin/pages/pp/image/m3.png";
-        		sze = "float:right; width:160; height:230;";
+        		sze = "float:right; width:300; height:230;";
         		anm = "slideinTop";
         	}
         	%>
