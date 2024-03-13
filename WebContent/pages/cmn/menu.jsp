@@ -371,7 +371,8 @@
           <tr style="text-align: center;">
             <td width="21%">
             	<p id = "name" style="font-size: 12px;" onload = "change()">${shainName}</p>
-            	<img alt="No image" src="/kikin/pages/pp/image/${shainId}.jpg" width="60px" height="60px" style="border-radius: 50%;"></td>
+            	<img alt="No image" src="/kikin/pages/pp/image/${shainId}.jpg" width="60px" height="60px" style="border-radius: 50%;" onerror="this.onerror=null; this.src='/kikin/pages/pp/image/default.jpg';">
+            </td>
             <td id="footLeft">
               Å@
             </td>
