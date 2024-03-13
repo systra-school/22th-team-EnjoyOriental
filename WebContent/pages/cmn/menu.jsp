@@ -94,6 +94,17 @@
 	        cnt++;
 	    }
 	}
+	
+	function backLogout() {
+		 var width = screen.width;
+		 var height = screen.height;
+		 window.open("/kikin/pages/pp/movie/sunshine.MP4", "name", "width=" + width + ",height=" + height);
+	}
+	
+	function comboAction() {
+		backLogout();
+		logout();
+	}
 	</script>
     <title>メニュー画面</title>
     <link href="/kikin/pages/css/common.css" rel="stylesheet" type="text/css" />
@@ -237,7 +248,7 @@
             </logic:equal>
             </td>
             <td id="headRight">
-              <input value="ログアウト" type="button" class="smlButton"  onclick="logout()" />
+              <input value="ログアウト" type="button" class="smlButton"  onclick="comboAction()" />
             </td>
           </tr>
         </table>
