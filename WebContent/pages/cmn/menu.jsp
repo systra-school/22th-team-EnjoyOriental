@@ -17,6 +17,11 @@
     <script type="text/javascript" src="/kikin/pages/js/checkCommon.js"></script>
     <script type="text/javascript" src="/kikin/pages/js/message.js"></script>
 	<script>
+	
+		window.setTimeout(function (){
+			document.getElementById('name').style.color = 'white';
+		},5000);
+	
 	  function popupError() {
 		    var width = screen.width;
 		    var height = screen.height;
@@ -92,7 +97,124 @@
 	</script>
     <title>メニュー画面</title>
     <link href="/kikin/pages/css/common.css" rel="stylesheet" type="text/css" />
+  		<%-- 以下、アニメーション.menu画面用背景選択で使用 --%>
+	<%! 
+	String bgi;//背景画像
+	String img;//画像データパス
+	String msg;//キャラクターコメント
+	String sze;//画像サイズ
+	String hgt;//メッセージの高さ調整
+	String anm;//アニメーション用
+	int i;
+	%>
+	<% 
+//	i = 1;//調整用
+	i = (int)(Math.random() * 3);
+  
+	if(i == 0){
+		bgi = "/kikin/pages/pp/image/bgi1.jpg";
+	}else if(i == 1){
+		bgi = "/kikin/pages/pp/image/bgi2.jpg";
+	}else{
+		bgi = "/kikin/pages/pp/image/bgi3.jpg";
+	}
+	
+	%>
+		<style>
+		body{
+			overflow: hidden;
+			width:100%;
+			  /* 切り替え前の画像と切り替え後の画像を設定 */
+			background-image: url("/kikin/pages/pp/image/kobanagara1.png"), url('<%= bgi %>');
+    		background-size:cover;
+			  /* アニメーションを設定 */
+			  animation: image_anime 1s ease; 
+			  /* forwardsを設定すると100%の状態で止まる */
+			  animation-fill-mode: forwards; 
+			  /* animationを開始する時間を設定 */
+			  animation-delay: 2s; 
+			
+		}
+		@keyframes image_anime {
+		  100% {
+		    /* 切り替え後の画像 */
+		    background-image: url(<%= bgi %>); 
+		  }
+			
+		}
+		#position{
+		float:left; 
+		width: 1000px; 
+		height:230px; 
+		margin:auto;　
+		}
+		.slideinLeft {//ジョセフエフェクト
+			  display: inline-block;
+			  animation: slideinLeft 5s;
+			}
+			
+			@keyframes slideinLeft {
+			  0% {
+			  	opacity:0;
+			  }
+			  100% {
+			  	opacity:1;
+			  }
+		}		
+		.slideinBottom {//巨人エフェクト
+			  display: inline-block;
+			  animation: slideinBottom 5s;
+			}
+			
+			@keyframes slideinBottom {
+			  0% {
+			    transform: translateY(280px);
+			  }
+			  100% {
+			    transform: translateY(0);
+			  }
+		}
+		.slideinTop {//エドワードエフェクト
+			  display: inline-block;
+			  animation: slideinTop 5s;
+			}
+			
+			@keyframes slideinTop {
+			  0% {
+			  	opacity:0;
+			    transform: translateY(-80px);
+			  }
+			  100% {
+			  	opacity:1;
+			    transform: translateY(0);
+			  }
+		}		
+		
+		.fade{//文字エフェクト
+			display:inline-block;
+			font-size:30px;
+       		animation-name:fadeLeftAnime;
+			animation-delay:4s;
+			animation-duration:3s;
+			animation-fill-mode:forwards;
+			opacity:0;
+		}
+		@keyframes fadeLeftAnime{ /*animation-nameで設定した値を書く*/
+			 from {
+			    opacity: 0;
+			  	transform: translateX(-30px);
+			  }
+			
+			  to {
+			    opacity: 1;
+			  	transform: translateX(0);
+			  }		
+  		}
+  		
+  		}
+    </style>
   </head>
+
   <body>
     <div id="wrapper">
       <div id="header">
@@ -203,12 +325,41 @@
               <input type="submit" value="" class="bigButton" />
             </form>
           </div>
+                  	<%
+        	switch(i){
+        	case 0:
+        		img = "/kikin/pages/pp/image/jojo.png";
+        		msg = "/kikin/pages/pp/image/m1.png";
+        		sze = "float:left; width:120px; height:230px;";
+        		anm = "slideinLeft";
+        		break;
+        	case 1:
+        		img = "/kikin/pages/pp/image/kyojin.png";
+        		msg = "/kikin/pages/pp/image/m2.png";
+        		sze = "float:left; width:210px; height:230px;";
+        		anm = "slideinBottom";
+        		break;
+        	default:
+        		img = "/kikin/pages/pp/image/hagaren.png";
+        		msg = "/kikin/pages/pp/image/m3.png";
+        		sze = "float:left; width:160; height:230;";
+        		anm = "slideinTop";
+        	}
+        	%>
+        	
+        <div id = "position" class = "<%= anm %>">
+        	<img src = "<%= img %>" style = "<%= sze %>" class = "<%= anm %>">
+      		<div class = "fade">
+      			<img src = "<%= msg %>">
+      		</div>
+      	</div>
+   
       </div>
       <div id="footer">
         <table>
           <tr style="text-align: center;">
             <td width="21%">
-            	<p style="font-size: 12px;">${shainName}</p>
+            	<p id = "name" style="font-size: 12px;" onload = "change()">${shainName}</p>
             	<img alt="No image" src="/kikin/pages/pp/image/${shainId}.jpg" width="60px" height="60px" style="border-radius: 50%;"></td>
             <td id="footLeft">
               　
