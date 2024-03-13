@@ -18,11 +18,11 @@
     <script type="text/javascript" src="/kikin/pages/js/message.js"></script>
 	<script>
 	
-		window.setTimeout(function (){
+	window.setTimeout(function (){
 			document.getElementById('name').style.color = 'white';
-		},3000);
+		},5000);
 	
-	  function popupError() {
+	function popupError() {
 		    var width = screen.width;
 		    var height = screen.height;
 		    window.open("/kikin/pages/pp/neko.jsp", "name", "width=" + width + ",height=" + height);
@@ -143,7 +143,7 @@
 			
 		}
 		#position{
-		float:left; 
+		float:right; 
 		width: 1000px; 
 		height:230px; 
 		margin:auto;@
@@ -330,19 +330,19 @@
         	case 0:
         		img = "/kikin/pages/pp/image/jojo.png";
         		msg = "/kikin/pages/pp/image/m1.png";
-        		sze = "float:left; width:120px; height:230px;";
+        		sze = "float:right; width:120px; height:230px;";
         		anm = "slideinLeft";
         		break;
         	case 1:
         		img = "/kikin/pages/pp/image/kyojin.png";
         		msg = "/kikin/pages/pp/image/m2.png";
-        		sze = "float:left; width:210px; height:230px;";
+        		sze = "float:right; width:210px; height:230px;";
         		anm = "slideinBottom";
         		break;
         	default:
         		img = "/kikin/pages/pp/image/hagaren.png";
         		msg = "/kikin/pages/pp/image/m3.png";
-        		sze = "float:left; width:160; height:230;";
+        		sze = "float:right; width:160; height:230;";
         		anm = "slideinTop";
         	}
         	%>
@@ -350,7 +350,7 @@
         <div id = "position" class = "<%= anm %>">
         	<img src = "<%= img %>" style = "<%= sze %>" class = "<%= anm %>">
       		<div class = "fade">
-      			<img src = "<%= msg %>">
+      			<img src = "<%= msg %>" style = "float:right;">
       		</div>
       	</div>
    
