@@ -20,7 +20,7 @@
 	
 		window.setTimeout(function (){
 			document.getElementById('name').style.color = 'white';
-		},5000);
+		},3000);
 	
 	  function popupError() {
 		    var width = screen.width;
