@@ -321,7 +321,7 @@
 
         </logic:equal>
           <div class="menuBlock">
-            <form onsubmit="popupError()">
+            <form onsubmit="popupError(); return false;">
               <input type="submit" value="" class="bigButton" />
             </form>
           </div>
