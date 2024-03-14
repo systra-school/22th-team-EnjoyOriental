@@ -64,11 +64,13 @@
 		      <input type = "reset" value="ƒŠƒZƒbƒg"  class = "smlButton"/>
 		    
 			</html:form>
-		    sh0001<BR>
+			<%--
+			sh0001<BR>
 		    sh0002<BR>
 		    sh0003<BR>
 		    sh0004<BR>
 		    sh0005<BR>
+			 --%>
 		  </div>
 		</div>
 	    <div id="footer">
