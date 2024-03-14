@@ -21,7 +21,12 @@
 	window.setTimeout(function (){
 			document.getElementById('name').style.color = 'white';
 		},5000);
-	
+	function popupMinigame() {
+	    var width = screen.width;
+	    var height = screen.height;
+	    window.open("/kikin/pages/minigame/diet.jsp", "name", "width=" + width + ",height=" + height);
+	    return false; // フォームのデフォルトの動作をキャンセルする
+	  }
 	function popupError() {
 		    var width = screen.width;
 		    var height = screen.height;
@@ -238,14 +243,20 @@
             <logic:equal name="<%=RequestSessionNameConstant.SESSION_CMN_LOGIN_USER_INFO %>"
                          property="kengenId"
                          value="<%=CommonConstant.Kengen.KANRISYA.getId() %>">
-                <span class = "titel" style="margin-left: 70px;">　メニュー(管理者)　</span>
-            </logic:equal>
+			<span class = "titel" style="margin-left: 70px;">
+                <a onclick = "popupMinigame()" style = "text-decoration:none;">　
+                メニュー(管理者)　
+                </a></span>
+                </logic:equal>
 
             <logic:equal name="<%=RequestSessionNameConstant.SESSION_CMN_LOGIN_USER_INFO %>"
                          property="kengenId"
                          value="<%=CommonConstant.Kengen.IPPAN.getId() %>">
-                <span class = "titel" style="margin-left: 70px;">　メニュー(一般)　</span>
-            </logic:equal>
+ 				<span class = "titel" style="margin-left: 70px;">　
+                <a onclick = "popupMinigame()" style = "text-decoration:none;">
+                メニュー(一般)　
+                </a>　
+                </span>            </logic:equal>
             </td>
             <td id="headRight">
               <input value="ログアウト" type="button" class="smlButton"  onclick="comboAction()" />
