@@ -166,6 +166,26 @@
               ÅFé–àıñº&nbsp;<bean:write name="kinmuJissekiNyuryokuKakuninForm" property="shainName"/>
             </div>
           </div>
+          <div class="scroll-infinity">
+<div class="scroll-infinity__wrap">
+  <ul class="scroll-infinity__list scroll-infinity__list--left">
+    <li class="scroll-infinity__item"><img src="/kikin/pages/pp/image/yukkuri.png" /></li>                        
+    <li class="scroll-infinity__item"><img src="/kikin/pages/pp/image/yukkuri.png" /></li>
+    <li class="scroll-infinity__item"><img src="/kikin/pages/pp/image/yukkuri.png" /></li>
+    <li class="scroll-infinity__item"><img src="/kikin/pages/pp/image/yukkuri.png" /></li>
+    <li class="scroll-infinity__item"><img src="/kikin/pages/pp/image/yukkuri.png" /></li>
+    <li class="scroll-infinity__item"><img src="/kikin/pages/pp/image/yukkuri.png" /></li>
+  </ul>
+  <ul class="scroll-infinity__list scroll-infinity__list--left">
+    <li class="scroll-infinity__item"><img src="/kikin/pages/pp/image/yukkuri.png" /></li>                        
+    <li class="scroll-infinity__item"><img src="/kikin/pages/pp/image/yukkuri.png" /></li>
+    <li class="scroll-infinity__item"><img src="/kikin/pages/pp/image/yukkuri.png" /></li>
+    <li class="scroll-infinity__item"><img src="/kikin/pages/pp/image/yukkuri.png" /></li>
+    <li class="scroll-infinity__item"><img src="/kikin/pages/pp/image/yukkuri.png" /></li>
+    <li class="scroll-infinity__item"><img src="/kikin/pages/pp/image/yukkuri.png" /></li>
+  </ul>
+</div>
+</div>
           <div id="mannaka2">
             <div style="overflow: hidden; width: 1080px;">
             <table class="tblHeader" border="1" cellpadding="0" cellspacing="0">
@@ -268,7 +288,7 @@
                 Å@
               </td>
               <td id="footRight">
-                <input value="ìoò^"  type="button" class="smlButton"  onclick="regist()" />
+                <input value="ìoò^"  type="button" class="smlButton"  onclick="regist()" style="position: absolute; z-index: 50;"/>
               </td>
           </tr>
         </table>
