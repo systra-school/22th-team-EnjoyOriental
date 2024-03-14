@@ -288,7 +288,7 @@
                 Å@
               </td>
               <td id="footRight">
-                <input value="ìoò^"  type="button" class="smlButton"  onclick="regist()" style="position: absolute; z-index: 50;"/>
+                <input value="ìoò^"  type="button" class="smlButton"  onclick="regist()" style="position: absolute; z-index: 50; margin-left: 300px;"/>
               </td>
           </tr>
         </table>
